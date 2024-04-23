@@ -68,20 +68,294 @@ body main .whats_link {
   align-items: center;
   justify-content: center;
   padding: 1vw;
+  z-index: 999;
 }
 body main .whats_link img, body main .whats_link svg {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(0 2px 2px #0F0F0F);
 }
 body main section {
-  outline: 1px solid greenyellow;
   width: 90%;
   height: 100vh;
 }
-body main .contato {
+body main #banner {
+  position: relative;
+}
+body main #banner .Bg_home {
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 112%;
+  height: 100%;
+  z-index: -1;
+}
+body main #banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 32.75vw;
+  height: 100vh;
+  background-color: #4B4B4D;
+  border-bottom-right-radius: 10vw;
+}
+body main #banner .banner_Block {
+  position: relative;
+  width: 27vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body main #banner .banner_Block #logo {
+  width: 8vw;
+  height: auto;
+  margin: 3vh 0 14vh;
+}
+body main #banner .banner_Block h1 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  letter-spacing: 0.15vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+body main #banner .banner_Block h1::before {
+  content: "";
+  position: absolute;
+  right: 12%;
+  width: 32%;
+  height: 3px;
+  background: #D9B06A;
+}
+body main #banner .banner_Block h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.35vw;
+  color: #FFFFFF;
+  padding-right: 12%;
+  line-height: 5.5vh;
+  margin-bottom: 3vh;
+}
+body main #banner .banner_Block h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.95vw;
+  color: #FFFFFF;
+  padding-right: 12%;
+  line-height: 2.5vh;
+  margin-bottom: 8vh;
+}
+body main #banner .banner_Block .btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 5.5vh;
+  width: 15.5vw;
+}
+body main #banner .banner_Block .btn img, body main #banner .banner_Block .btn svg {
+  position: absolute;
+  z-index: 1;
+}
+body main #banner .banner_Block .btn img:last-child, body main #banner .banner_Block .btn svg:last-child {
+  right: 0;
+  width: auto;
+  height: 1.75vh;
+}
+body main #banner .banner_Block .btn p {
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  margin-left: 1.3vw;
+}
+body main #condominio {
+  display: flex;
+  position: relative;
+  padding-top: 7.5vh;
+}
+body main #condominio .menu {
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 102vw;
+  height: 7vh;
+  padding: 1vh 5% 1vh 6%;
+  background: #F2F2F2;
+  box-shadow: 0 0px 10px #0F0F0F;
+  z-index: 999;
+}
+body main #condominio .menu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+body main #condominio .menu ul li {
+  width: 17%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #D9B06A;
+  border-right: 1px solid #D9B06A;
+}
+body main #condominio .menu ul li:first-child {
+  border-left: none;
+}
+body main #condominio .menu ul li:last-child {
+  border-right: none;
+}
+body main #condominio .menu ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  color: #4B4B4D;
+  letter-spacing: 0.05vw;
+}
+body main #condominio .fixed {
+  position: fixed;
+  left: 0;
+  padding: 1vh 5%;
+  background: #FFFFFF;
+}
+body main #condominio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 84%;
+  height: 54vh;
+  background: #D9B06A;
+  z-index: 1;
+  border-bottom-left-radius: 10vw;
+}
+body main #condominio .cond_block {
+  width: 67%;
+  height: 100%;
+  z-index: 2;
+}
+body main #condominio .cond_block p {
+  margin-top: 11vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.15vw;
+  letter-spacing: 0.15vw;
+  color: #FFFFFF;
+}
+body main #condominio .cond_block h2 {
+  font-family: "Brandbe", sans-serif;
+  font-size: 5.25vw;
+  letter-spacing: 0.75vw;
+  color: #FFFFFF;
+}
+body main #condominio .cond_block h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  letter-spacing: 0.15vw;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+body main #condominio .cond_block h3:nth-child(3) {
+  margin-top: 4.5vh;
+}
+body main #condominio .cond_block h3:nth-child(4) {
+  margin-top: 2.5vh;
+}
+body main #condominio .cond_block h3:nth-child(4) img, body main #condominio .cond_block h3:nth-child(4) svg {
+  margin-right: 1vw;
+}
+body main #condominio .cond_block ul {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  padding-right: 5vw;
+}
+body main #condominio .cond_block ul li {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #D9B06A;
+  border-right: 1px solid #D9B06A;
+  font-family: "Antonio", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #4B4B4D;
+  letter-spacing: 0.1vw;
+}
+body main #condominio .cond_block ul li:first-child {
+  border-left: none;
+}
+body main #condominio .cond_block ul li:last-child {
+  border-right: none;
+}
+body main #condominio .cond_block h4 {
+  margin-top: 3vh;
+  padding-right: 4.75vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.95vw;
+  color: #4B4B4D;
+  line-height: 3.5vh;
+}
+body main #condominio .cond_block .btn {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 5.5vh;
+  width: 15.5vw;
+}
+body main #condominio .cond_block .btn img, body main #condominio .cond_block .btn svg {
+  position: absolute;
+  z-index: 1;
+}
+body main #condominio .cond_block .btn p {
+  all: unset;
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  margin-left: 1.4vw;
+}
+body main #condominio .block_imgCond {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+body main #condominio .block_imgCond img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0.5vw;
+}
+body main #contato {
   height: 75vh;
 }
-body main .whats {
+body main #whats {
   height: 50vh;
 }
 body footer {

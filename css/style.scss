@@ -30,20 +30,283 @@ body {
             align-items: center;
             justify-content: center;
             padding: 1vw;
+            z-index: 999;
             img, svg{
                 width: 100%;
                 height: 100%;
+                filter: drop-shadow(0 2px 2px $Cinzao);
             }
         }
         section{
-            outline: 1px solid greenyellow;
             width: 90%;
             height: 100vh;
         }
-        .contato{
+        #banner{
+            position: relative;
+            .Bg_home{
+                position: absolute;
+                top: 0;
+                left: -6%;
+                width: 112%;
+                height: 100%;
+                z-index: -1;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -6%;
+                width: 32.75vw;
+                height: 100vh;
+                background-color: $Cinza;
+                border-bottom-right-radius: 10vw;
+            }
+            .banner_Block{
+                position: relative;
+                width: 27vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                #logo{
+                    width: 8vw;
+                    height: auto;
+                    margin: 3vh 0 14vh;
+                }
+                h1{
+                    font-family: $Second-font;
+                    font-weight: 700;
+                    font-size: 1.5vw;
+                    color: $Branco;
+                    letter-spacing: 0.15vw;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10vh;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        right: 12%;
+                        width: 32%;
+                        height: 3px;
+                        background: $Creme;
+                    }
+                }
+                h2{
+                    font-family: $Main-font;
+                    font-weight: 700;
+                    font-size: 2.35vw;
+                    color: $Branco;
+                    padding-right: 12%;
+                    line-height: 5.5vh;
+                    margin-bottom: 3vh;
+                }
+                h4{
+                    font-family: $Main-font;
+                    font-weight: 100;
+                    font-size: 0.95vw;
+                    color: $Branco;
+                    padding-right: 12%;
+                    line-height: 2.5vh;
+                    margin-bottom: 8vh;
+                }
+                .btn{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    height: 5.5vh;
+                    width: 15.5vw;
+                    img, svg{
+                        position: absolute;
+                        z-index: 1;
+                        &:last-child{
+                            right: 0;
+                            width: auto;
+                            height: 1.75vh;
+                        }
+                    }
+                    p{
+                        z-index: 2;
+                        font-family: $Main-font;
+                        font-weight: 900;
+                        font-size: 1.25vw;
+                        color: $Branco;
+                        margin-left: 1.3vw;
+                    }
+                }
+            }
+        }
+        #condominio{
+            display: flex;
+            position: relative;
+            padding-top: 7.5vh;
+            .menu{
+                position: absolute;
+                top: 0;
+                left: -6%;
+                width: 102vw;
+                height: 7vh;
+                padding: 1vh 5% 1vh 6%;
+                background: $Cinzinha;
+                box-shadow: 0 0px 10px $Cinzao;
+                z-index: 999;
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        width: 17%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-left: 1px solid $Creme;
+                        border-right: 1px solid $Creme;
+                        &:first-child{ border-left: none; }
+                        &:last-child{ border-right: none; }
+                        a{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: $Main-font;
+                            font-weight: 700;
+                            font-size: 0.9vw;
+                            color: $Cinza;
+                            letter-spacing: 0.05vw;
+                        }
+                    }
+                }
+            }
+            .fixed{
+                position: fixed;
+                left: 0;
+                padding: 1vh 5%;
+                background: $Branco;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -6%;
+                width: 84%;
+                height: 54vh;
+                background: $Creme;
+                z-index: 1;
+                border-bottom-left-radius: 10vw;
+            }
+            .cond_block{
+                width: 67%;
+                height: 100%;
+                z-index: 2;
+                p{
+                    margin-top: 11vh;
+                    font-family: $Main-font;
+                    font-weight: 400;
+                    font-size: 1.15vw;
+                    letter-spacing: 0.15vw;
+                    color: $Branco;
+                }
+                h2{
+                    font-family: $Title-font;
+                    font-size: 5.25vw;
+                    letter-spacing: 0.75vw;
+                    color: $Branco;
+                }
+                h3{
+                    font-family: $Main-font;
+                    font-weight: 700;
+                    font-size: 1.5vw;
+                    letter-spacing: 0.15vw;
+                    color: $Branco;
+                    display: flex;
+                    align-items: center;
+                    &:nth-child(3){ margin-top: 4.5vh; }
+                    &:nth-child(4){ 
+                        margin-top: 2.5vh;
+                        img, svg{
+                            margin-right: 1vw;
+                        }
+                    }
+                }
+                ul{
+                    width: 100%;
+                    height: 6vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10vh;
+                    padding-right: 5vw;
+                    li{
+                        width: 25%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-left: 1px solid $Creme;
+                        border-right: 1px solid $Creme;
+                        &:first-child{ border-left: none; }
+                        &:last-child{ border-right: none; }
+                        font-family: $Second-font;
+                        font-weight: 700;
+                        font-size: 1vw;
+                        color: $Cinza;
+                        letter-spacing: 0.1vw;
+                    }
+                }
+                h4{
+                    margin-top: 3vh;
+                    padding-right: 4.75vw;
+                    font-family: $Main-font;
+                    font-weight: 300;
+                    font-size: 0.95vw;
+                    color: $Cinza;
+                    line-height: 3.5vh;
+                }
+                .btn{
+                    margin-top: 5vh;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    height: 5.5vh;
+                    width: 15.5vw;
+                    img, svg{
+                        position: absolute;
+                        z-index: 1;
+                    }
+                    p{
+                        all: unset;
+                        z-index: 2;
+                        font-family: $Main-font;
+                        font-weight: 900;
+                        font-size: 1.25vw;
+                        color: $Branco;
+                        margin-left: 1.4vw;
+                    }
+                }
+            }
+            .block_imgCond{
+                width: 33%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                z-index: 2;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    border-radius: 0.5vw;
+                }
+            }
+        }
+        #contato{
             height: 75vh;
         }
-        .whats{
+        #whats{
             height: 50vh;
         }
     }
