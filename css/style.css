@@ -4,6 +4,7 @@
   font-family: "Brandbe";
   font-weight: 800;
   src: local("Brandbe Bold"), url("../assets/Brandbe_Extra_Bold.otf") format("opentype");
+  font-display: swap;
 }
 *,
 *::after,
@@ -264,19 +265,22 @@ body main #condominio .cond_block h2 {
 body main #condominio .cond_block h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
+  letter-spacing: 0.15vw;
+  color: #FFFFFF;
+  margin-top: 4.5vh;
+}
+body main #condominio .cond_block h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.4vw;
   letter-spacing: 0.15vw;
   color: #FFFFFF;
   display: flex;
   align-items: center;
-}
-body main #condominio .cond_block h3:nth-child(3) {
-  margin-top: 4.5vh;
-}
-body main #condominio .cond_block h3:nth-child(4) {
   margin-top: 2.5vh;
 }
-body main #condominio .cond_block h3:nth-child(4) img, body main #condominio .cond_block h3:nth-child(4) svg {
+body main #condominio .cond_block h4 img, body main #condominio .cond_block h4 svg {
   margin-right: 1vw;
 }
 body main #condominio .cond_block ul {
@@ -308,7 +312,7 @@ body main #condominio .cond_block ul li:first-child {
 body main #condominio .cond_block ul li:last-child {
   border-right: none;
 }
-body main #condominio .cond_block h4 {
+body main #condominio .cond_block h5 {
   margin-top: 3vh;
   padding-right: 4.75vw;
   font-family: "Roboto", sans-serif;
@@ -328,6 +332,7 @@ body main #condominio .cond_block .btn {
 body main #condominio .cond_block .btn img, body main #condominio .cond_block .btn svg {
   position: absolute;
   z-index: 1;
+  height: auto;
 }
 body main #condominio .cond_block .btn p {
   all: unset;
@@ -351,6 +356,163 @@ body main #condominio .block_imgCond img {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 0.5vw;
+}
+body main #plantas {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+body main #plantas h2 {
+  width: 100%;
+  height: 10vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #4B4B4D;
+  display: flex;
+  align-items: center;
+}
+body main #plantas .nav-pills {
+  width: 25%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  padding-bottom: 15vh;
+}
+body main #plantas .nav-pills a {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  margin: 0.5vh 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #D9B06A;
+  border: 2px solid #D9B06A;
+  border-radius: 5vw;
+  padding: 0.5vh 0;
+  letter-spacing: 0.15vw;
+}
+body main #plantas .nav-pills .active {
+  background: #D9B06A;
+  color: #FFFFFF;
+}
+body main #plantas .tab-content {
+  width: 75%;
+  height: 90vh;
+  position: relative;
+}
+body main #plantas .tab-content .infos_plantas {
+  position: absolute;
+  bottom: 0;
+  left: -22.5vw;
+  width: 35vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+}
+body main #plantas .tab-content .infos_plantas h3 {
+  width: 100%;
+  height: 25%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  letter-spacing: 0.3vw;
+  color: #4B4B4D;
+  display: flex;
+  align-items: center;
+}
+body main #plantas .tab-content .infos_plantas ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 2vw;
+}
+body main #plantas .tab-content .infos_plantas ul li {
+  height: 33.3%;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: #4B4B4D;
+  letter-spacing: 0.1vw;
+}
+body main #plantas .tab-content .infos_plantas ul li::before {
+  content: "";
+  position: absolute;
+  left: 0.15vw;
+  width: 0.25vw;
+  height: 0.25vw;
+  background: #4B4B4D;
+  border-radius: 50%;
+}
+body main #plantas .tab-content .espaco_planta {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body main #plantas .tab-content .espaco_planta h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 8vw;
+  color: #FFFFFF;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  padding-right: 2vw;
+}
+body main #plantas .tab-content .espaco_planta h4 span {
+  font-weight: 300;
+  margin-left: 1.5vw;
+}
+body main #plantas .tab-content .espaco_planta h4::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 50vh;
+  z-index: -1;
+  background: #D9B06A;
+  border-bottom-right-radius: 10vw;
+}
+body main #plantas .tab-content .espaco_planta img {
+  margin: 5vh 13vw 0 auto;
+  width: 45vw;
+  height: auto;
+}
+body main #plantas .tab-content .espaco_planta .btn {
+  margin: 30vh 5vw 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 5vh;
+  width: 13vw;
+}
+body main #plantas .tab-content .espaco_planta .btn img, body main #plantas .tab-content .espaco_planta .btn svg {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+body main #plantas .tab-content .espaco_planta .btn p {
+  all: unset;
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.1vw;
+  color: #FFFFFF;
+  margin-left: 1.4vw;
 }
 body main #contato {
   height: 75vh;

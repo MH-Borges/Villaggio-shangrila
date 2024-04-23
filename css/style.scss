@@ -220,18 +220,21 @@ body {
                 h3{
                     font-family: $Main-font;
                     font-weight: 700;
-                    font-size: 1.5vw;
+                    font-size: 1.4vw;
+                    letter-spacing: 0.15vw;
+                    color: $Branco;
+                    margin-top: 4.5vh;
+                }
+                h4{
+                    font-family: $Main-font;
+                    font-weight: 700;
+                    font-size: 1.4vw;
                     letter-spacing: 0.15vw;
                     color: $Branco;
                     display: flex;
                     align-items: center;
-                    &:nth-child(3){ margin-top: 4.5vh; }
-                    &:nth-child(4){ 
-                        margin-top: 2.5vh;
-                        img, svg{
-                            margin-right: 1vw;
-                        }
-                    }
+                    margin-top: 2.5vh;
+                    img, svg{ margin-right: 1vw; }
                 }
                 ul{
                     width: 100%;
@@ -258,7 +261,7 @@ body {
                         letter-spacing: 0.1vw;
                     }
                 }
-                h4{
+                h5{
                     margin-top: 3vh;
                     padding-right: 4.75vw;
                     font-family: $Main-font;
@@ -277,6 +280,7 @@ body {
                     img, svg{
                         position: absolute;
                         z-index: 1;
+                        height: auto;
                     }
                     p{
                         all: unset;
@@ -300,6 +304,163 @@ body {
                     height: auto;
                     object-fit: contain;
                     border-radius: 0.5vw;
+                }
+            }
+        }
+        #plantas{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            h2{
+                width: 100%;
+                height: 10vh;
+                font-family: $Main-font;
+                font-weight: 700;
+                font-size: 2vw;
+                color: $Cinza;
+                display: flex;
+                align-items: center;
+            }
+            .nav-pills{
+                width: 25%;
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+                padding: 1vw;
+                padding-bottom: 15vh;
+                a{
+                    all: unset;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0.5vh 0;
+                    font-family: $Main-font;
+                    font-weight: 700;
+                    font-size: 1vw;
+                    color: $Creme;
+                    border: 2px solid $Creme;
+                    border-radius: 5vw;
+                    padding: 0.5vh 0;
+                    letter-spacing: 0.15vw;
+                }
+                .active{
+                    background: $Creme;
+                    color: $Branco;
+                }
+            }
+            .tab-content{
+                width: 75%;
+                height: 90vh;
+                position: relative;
+                .infos_plantas{
+                    position: absolute;
+                    bottom: 0;
+                    left: -22.5vw;
+                    width: 35vw;
+                    height: 25vh;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        width: 100%;
+                        height: 25%;
+                        font-family: $Main-font;
+                        font-weight: 700;
+                        font-size: 1.5vw;
+                        letter-spacing: 0.3vw;
+                        color: $Cinza;
+                        display: flex;
+                        align-items: center;
+                    }
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        height: 75%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        justify-content: left;
+                        margin-left: 2vw;
+                        li{
+                            height: 33.3%;
+                            display: flex;
+                            align-items: center;
+                            padding-left: 1vw;
+                            position: relative;
+                            font-family: $Main-font;
+                            font-weight: 500;
+                            font-size: 0.8vw;
+                            color: $Cinza;
+                            letter-spacing: 0.1vw;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                left: 0.15vw;
+                                width: 0.25vw;
+                                height: 0.25vw;
+                                background: $Cinza;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+                .espaco_planta{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h4{
+                        font-family: $Main-font;
+                        font-weight: 700;
+                        font-size: 8vw;
+                        color: $Branco;
+                        position: relative;
+                        display: flex;
+                        justify-content: right;
+                        padding-right: 2vw;
+                        span{
+                            font-weight: 300;
+                            margin-left: 1.5vw;
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 45%;
+                            height: 50vh;
+                            z-index: -1;
+                            background: $Creme;
+                            border-bottom-right-radius: 10vw;
+                        }
+                    }
+                    img{
+                        margin: 5vh 13vw 0 auto;
+                        width: 45vw;
+                        height: auto;
+                    }
+                    .btn{
+                        margin: 30vh 5vw 0 auto;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        height: 5vh;
+                        width: 13vw;
+                        img, svg{
+                            height: 100%;
+                            position: absolute;
+                            z-index: 1;
+                            left: 0;
+                        }
+                        p{
+                            all: unset;
+                            z-index: 2;
+                            font-family: $Main-font;
+                            font-weight: 900;
+                            font-size: 1.1vw;
+                            color: $Branco;
+                            margin-left: 1.4vw;
+                        }
+                    }
                 }
             }
         }
