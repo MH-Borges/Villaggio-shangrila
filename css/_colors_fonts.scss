@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
+@font-face{
+    font-family: "Brandbe";
+    font-weight: 800;
+    src: local('Brandbe Bold'), url('../assets/Brandbe_Extra_Bold.otf') format('opentype');
+}
+
+$Title-font: 'Brandbe', sans-serif;
+$Main-font: 'Roboto', sans-serif;
+$Second-font: 'Antonio', sans-serif;
+
+
+////// Brandbe pesos
+// Extrabold = 800
+
+////// Roboto pesos
+// Thin = 100
+// Light = 300
+// Regular = 400
+// Medium = 500
+// Bold = 700
+// Black = 900
+
+/////// Antonio pesos
+// Thin = 100
+// ExtraLight = 200
+// Light = 300
+// Regular = 400
+// Medium = 500
+// SemiBold = 600
+// Bold = 700
+
+$Branco: #FFFFFF;
+$Cinzinha: #F2F2F2;
+$Cinzao: #0F0F0F;
+$Preto: #000000;
+$Cinza: #4B4B4D;
+$Creme: #D9B06A;
