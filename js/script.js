@@ -45,3 +45,29 @@ window.addEventListener('scroll', function() {
     if(window.pageYOffset > 950){ document.querySelector(".menu").classList.add('fixed'); }
     else{ document.querySelector(".menu").classList.remove('fixed'); }
 });
+
+//Galeria
+document.addEventListener( 'DOMContentLoaded', function() {
+    var elms = document.getElementsByClassName( 'splide' );
+    for ( var i = 0; i < elms.length; i++ ) {
+        if(i == 1 || i == 2){
+            new Splide( elms[i], {
+                type   : 'loop',
+                perPage: 2,
+                focus  : 0
+            }).mount();
+        }
+        else{
+            new Splide( elms[i], {
+                type   : 'loop',
+                perPage: 3,
+                focus  : 0
+            }).mount();
+        }
+    }
+});
+
+function OpenImg(url) {
+    document.getElementById('img_Adapt').src= 'assets/'+url;
+    document.getElementById('Btn_adapt_Modal').click();
+}

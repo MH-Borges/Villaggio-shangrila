@@ -38,6 +38,10 @@ p, h1, h2, h3, h4, h5, h6 {
           user-select: none !important;
 }
 
+.modal {
+  --bs-modal-width: auto;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -414,7 +418,7 @@ body main #plantas .tab-content .infos_plantas {
 }
 body main #plantas .tab-content .infos_plantas h3 {
   width: 100%;
-  height: 25%;
+  height: 35%;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5vw;
@@ -427,7 +431,7 @@ body main #plantas .tab-content .infos_plantas ul {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 75%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -442,7 +446,7 @@ body main #plantas .tab-content .infos_plantas ul li {
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   color: #4B4B4D;
   letter-spacing: 0.1vw;
 }
@@ -513,6 +517,286 @@ body main #plantas .tab-content .espaco_planta .btn p {
   font-size: 1.1vw;
   color: #FFFFFF;
   margin-left: 1.4vw;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog, body main #plantas #C3_Quartos_Modal .modal-dialog {
+  width: 75vw;
+  height: 90%;
+  margin: 2.5% auto;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: none;
+  position: relative;
+  border: none;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close {
+  position: absolute;
+  top: -3vh;
+  right: -4vw;
+  width: 3vw;
+  height: 3vw;
+  background: none;
+  border: none;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close::before, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close::after, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close::before, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #FFFFFF;
+  border-radius: 5vw;
+  transform: rotate(45deg);
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close::after, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close::after {
+  transform: rotate(-45deg);
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 {
+  width: 100%;
+  height: 100%;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators {
+  height: 0.75vh;
+  align-items: center;
+  overflow: hidden;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators button, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators button {
+  background: #FFFFFF;
+  width: 2.5vw;
+  height: 0.5vh;
+  margin: 0 0.25vw;
+  border-radius: 10vw;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item img, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item img, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item img, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button {
+  width: 10%;
+  height: 75%;
+  margin: auto 0;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-prev-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-next-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-prev-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-next-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-prev-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-next-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-prev-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-next-icon {
+  width: 4vw;
+  height: 8vh;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-prev, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-prev, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-prev, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-prev {
+  left: -7.5vw;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-next, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-next, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-next, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-next {
+  right: -7.5vw;
+}
+body main #galeria {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #galeria .divisor {
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 111%;
+  height: auto;
+  z-index: -1;
+}
+body main #galeria::before {
+  content: "";
+  position: absolute;
+  width: 111%;
+  height: 87.5%;
+  left: -6%;
+  top: 13vh;
+  background-color: #4B4B4D;
+  z-index: -1;
+}
+body main #galeria h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #D9B06A;
+  font-size: 3.5vw;
+  padding: 1vh 0;
+  margin-top: 9vh;
+}
+body main #galeria .nav-pills {
+  justify-content: center;
+  height: 6vh;
+  width: 100%;
+  margin-top: 5vh;
+}
+body main #galeria .nav-pills a {
+  width: 20%;
+  border-left: 1px solid #D9B06A;
+  border-right: 1px solid #D9B06A;
+  border-radius: 0;
+  font-family: "Antonio", sans-serif;
+  font-weight: 700;
+  font-size: 1.15vw;
+  color: #FFFFFF;
+  letter-spacing: 0.1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #galeria .nav-pills a:first-child {
+  border-left: none;
+}
+body main #galeria .nav-pills a:last-child {
+  border-right: none;
+}
+body main #galeria .nav-pills .active {
+  background: #D9B06A;
+}
+body main #galeria .tab-content {
+  margin-top: 5vh;
+  width: 80%;
+  height: 60vh;
+  outline: 1px solid blue;
+  position: relative;
+}
+body main #galeria .tab-content .tab-pane {
+  width: 100%;
+  height: 100%;
+}
+body main #galeria .tab-content .tab-pane .splide {
+  width: 100%;
+  height: 100%;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow {
+  border-radius: 0;
+  width: 2vw;
+  height: 8vh;
+  background: #D9B06A;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow svg {
+  width: 100%;
+  height: 100%;
+  padding: 0.25vw;
+  fill: #FFFFFF;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--prev {
+  left: -5vw;
+  border-radius: 2vw 0.75vw 0.75vw 2vw;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--next {
+  right: -5vw;
+  border-radius: 0.75vw 2vw 2vw 0.75vw;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__track {
+  width: 100%;
+  height: 100%;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__track .splide__list .splide__slide button {
+  width: 100%;
+  height: 50%;
+  border: none;
+  background: none;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__track .splide__list .splide__slide button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #galeria .tab-content .tab-pane .splide .splide__pagination {
+  display: none;
+}
+body main #galeria .tab-content::before, body main #galeria .tab-content::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, #4B4B4D 10%, rgba(75, 75, 77, 0) 100%);
+  z-index: 999;
+  outline: 1px solid red;
+}
+body main #galeria .tab-content::after {
+  left: auto;
+  right: 0;
+  transform: rotate(180deg);
+}
+body main #galeria #Img_adapt_Modal .modal-dialog {
+  width: 75vw;
+  height: 90%;
+  margin: 2.5% auto;
+}
+body main #galeria #Img_adapt_Modal .modal-dialog .modal-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: none;
+  position: relative;
+  border: none;
+}
+body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-close {
+  position: absolute;
+  top: -3vh;
+  right: -4vw;
+  width: 3vw;
+  height: 3vw;
+  background: none;
+  border: none;
+}
+body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-close::before, body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-close::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #FFFFFF;
+  border-radius: 5vw;
+  transform: rotate(45deg);
+}
+body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-close::after {
+  transform: rotate(-45deg);
+}
+body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-body img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main #localizacao {
+  position: relative;
+  padding-top: 13vh;
+}
+body main #localizacao .divisor {
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 111%;
+  height: auto;
+  z-index: -1;
+  transform: rotate(180deg);
 }
 body main #contato {
   height: 75vh;

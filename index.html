@@ -21,8 +21,9 @@
     <!-- SVG Inject -->
     <script src="js/svg-inject.min.js"></script>
 
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Splide Carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -111,7 +112,7 @@
                         <h4>999 <span>m²</span></h4>
                         <img src="assets/C2_Quartos.webp" alt="Planta casa 2 quartos">
 
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">
+                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">
                             <img src="assets/icons/btn_plantas.svg" onload="SVGInject(this)">
                             <p>Veja as fotos</p>
                         </button>
@@ -143,11 +144,239 @@
 
                 </div>
             </div>
+
+            <!-- Modal C2 Quartos-->
+            <div class="modal fade" id="C2_Quartos_Modal" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+
+                            <div id="IndicatorsC2" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/Int_Casas/Int_C2_01.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C2_02.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C2_03.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C2_04.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C2_05.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C2_06.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C2_07.jpg" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#IndicatorsC2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#IndicatorsC2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal C3 Quartos-->
+            <div class="modal fade" id="C3_Quartos_Modal" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+
+                            <div id="IndicatorsC3" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#IndicatorsC3" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/Int_Casas/Int_C3_01.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_02.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_03.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_04.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_05.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_06.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_07.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_08.jpg" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/Int_Casas/Int_C3_09.jpg" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#IndicatorsC3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#IndicatorsC3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- REDUZIR O TAMANHO DAS IMAGENS E COMPRIMIR !!!!!URGENTE!!!!!-->
         <section id="galeria">
-            GALERIA
+            <img class="divisor" src="assets/divisor_galeria.svg" onload="SVGInject(this)">
+            <h2>Conheça nossos espaços</h2>
+
+            <nav class="nav nav-pills">
+                <a class="nav-link active" data-bs-toggle="pill" href="#Todos">Todas</a>
+                <a class="nav-link" data-bs-toggle="pill" href="#Entrada_fachada">Entrada e fachada</a>
+                <a class="nav-link" data-bs-toggle="pill" href="#Salao_festa">Salão de festa</a>
+                <a class="nav-link" data-bs-toggle="pill" href="#Area_comum">Área comum</a>
+            </nav>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="Todos">
+                    <div class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Guarita_Fachadas/Fachada01.jpg')"><img src="assets/Guarita_Fachadas/Fachada01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Guarita_Fachadas/Fachada02.jpg')"><img src="assets/Guarita_Fachadas/Fachada02.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Guarita_Fachadas/Guarita01.jpg')"><img src="assets/Guarita_Fachadas/Guarita01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Guarita_Fachadas/Guarita02.jpg')"><img src="assets/Guarita_Fachadas/Guarita02.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer01.jpg')"><img src="assets/Salao_Festas/Lazer01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer02.jpg')"><img src="assets/Salao_Festas/Lazer02.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer03.jpg')"><img src="assets/Salao_Festas/Lazer03.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer04.jpg')"><img src="assets/Salao_Festas/Lazer04.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer05.jpg')"><img src="assets/Salao_Festas/Lazer05.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer06.jpg')"><img src="assets/Salao_Festas/Lazer06.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer_Int01.jpg')"><img src="assets/Salao_Festas/Lazer_Int01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer_Int02.jpg')"><img src="assets/Salao_Festas/Lazer_Int02.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer_Int03.jpg')"><img src="assets/Salao_Festas/Lazer_Int03.jpg" alt=""></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Entrada_fachada">
+                    <div class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Guarita_Fachadas/Guarita01.jpg')"><img src="assets/Guarita_Fachadas/Guarita01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Guarita_Fachadas/Guarita02.jpg')"><img src="assets/Guarita_Fachadas/Guarita02.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Guarita_Fachadas/Fachada01.jpg')"><img src="assets/Guarita_Fachadas/Fachada01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Guarita_Fachadas/Fachada02.jpg')"><img src="assets/Guarita_Fachadas/Fachada02.jpg" alt=""></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Salao_festa">
+                    <div class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer_Int01.jpg')"><img src="assets/Salao_Festas/Lazer_Int01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer_Int02.jpg')"><img src="assets/Salao_Festas/Lazer_Int02.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer_Int03.jpg')"><img src="assets/Salao_Festas/Lazer_Int03.jpg" alt=""></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Area_comum">
+                    <div class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer01.jpg')"><img src="assets/Salao_Festas/Lazer01.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer02.jpg')"><img src="assets/Salao_Festas/Lazer02.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer03.jpg')"><img src="assets/Salao_Festas/Lazer03.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer04.jpg')"><img src="assets/Salao_Festas/Lazer04.jpg" alt=""></button>
+                                </li>
+                                <li class="splide__slide">
+                                    <button onclick="OpenImg('Salao_Festas/Lazer05.jpg')"><img src="assets/Salao_Festas/Lazer05.jpg" alt=""></button>
+                                    <button onclick="OpenImg('Salao_Festas/Lazer06.jpg')"><img src="assets/Salao_Festas/Lazer06.jpg" alt=""></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" id="Btn_adapt_Modal" class="hide" data-bs-toggle="modal" data-bs-target="#Img_adapt_Modal"></button>
+            <div class="modal fade" id="Img_adapt_Modal" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <img id="img_Adapt" src="assets/icons/logo.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section id="localizacao">
+            <img class="divisor" src="assets/divisor_galeria.svg" onload="SVGInject(this)">
             LOCALIZAÇÃO
         </section>
         <section id="entrega">
@@ -162,21 +391,5 @@
     </main>
     <footer></footer>
 
-    <!-- Modal C2 Quartos-->
-    <div class="modal fade" id="C2_Quartos_Modal" >
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal C3 Quartos-->
-    
 </body>
 </html>
