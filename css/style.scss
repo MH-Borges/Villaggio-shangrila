@@ -355,7 +355,7 @@ body {
                 position: relative;
                 .infos_plantas{
                     position: absolute;
-                    bottom: 0;
+                    bottom: 8vh;
                     left: -22.5vw;
                     width: 35vw;
                     height: 25vh;
@@ -674,11 +674,11 @@ body {
                     content: '';
                     position: absolute;
                     width: 10%;
-                    height: 100%;
+                    height: 105%;
                     left: 0;
-                    top: 0;
+                    top: -2%;
                     background: linear-gradient(90deg, $Cinza 10%, #4b4b4d00 100%);
-                    z-index: 999;
+                    z-index: 99;
                 }
                 &::after{
                     left: auto;
@@ -739,6 +739,8 @@ body {
         #localizacao{
             position: relative;
             padding-top: 13vh;
+            outline: 1px solid blue;
+            overflow: hidden;
             .divisor{
                 position: absolute;
                 top: 0;
@@ -749,11 +751,288 @@ body {
                 transform: rotate(180deg);
             }
         }
+        #entrega{
+            outline: 1px solid green;
+            .progress {
+                width: 100%;
+                height: 50px;
+            }
+            .progress-wrap {
+                background: #f80;
+                margin: 20px 0;
+                overflow: hidden;
+                position: relative;
+                .progress-bar {
+                    background: #ddd;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
         #contato{
             height: 75vh;
+            outline: 1px solid red;
+            overflow: hidden;
+            .form{
+                width: 50%;
+                height: 100%;
+                padding: 1vw;
+                display: flex;
+                align-items: center;
+                .labels{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 1vw;
+                    padding-bottom: 10vh;
+                    position: relative;
+                    justify-content: flex-end;
+                    .BlockBox{
+                        width: 80%;
+                        height: 7vh;
+                        position: relative;
+                        margin: 3vh 0;
+                        background-color: #888888;
+                        border-radius: 1vw;
+                        display: flex;
+                        &:nth-child(5){
+                            height: 12vh;
+                        }
+                        input, textarea{
+                            width: 95% !important;
+                            margin-left: 2.5%;
+                            font-size: 1vw;
+                            color: orange;
+                            border: none;
+                            background: none;
+                            outline: none;
+                            padding: 2vh 0.5vw;
+                            font-weight: 800;
+                        }
+                        textarea{
+                            min-height: 11vh !important;
+                            resize: none;
+                        }
+                        span{
+                            font-weight: 700;
+                            position: absolute;
+                            left: 1vw;
+                            top: 1.1vw;
+                            font-size: 1.1vw;
+                            color: blue;
+                            transition: 0.5s;
+                            pointer-events: none;
+                        }
+                        &:nth-child(1), &:nth-child(2){
+                            width: 38%;
+                        }
+                        &:nth-child(2){
+                            margin-left: 1.3vw;
+                        }
+                    }
+                    .BlockBox input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
+                        transform:translate(-1vw, -5.5vh);
+                        font-size: 1.25vw;
+                        color:blue;
+                    }
+                    #Enviar_Contato{
+                        position: absolute;
+                        font-size: 1vw;
+                        background: blue;
+                        color: $Branco;
+                        padding: 1vh 1vw;
+                        border-radius: 1vw;
+                        letter-spacing: 0.05vw;
+                        bottom: 0;
+                        right: 0;
+                        border: none;
+                        font-weight: 700;
+                    }
+
+                    .BlockBox{
+                        width: 50%;
+                        height: 5vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        input{
+                            width: 75%;
+                            height: 100%;
+                            border: none;
+                            font-family: $Second-font;
+                            font-size: 0.85vw;
+                            font-weight: 700;
+                            color: $Branco;
+                            background: none;
+                            border-bottom: 1px solid red;
+                            z-index: 10 !important;
+                            padding: 0 1vw;
+                            margin-top: -1vh;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        span{
+                            font-family: $Second-font;
+                            position: absolute;
+                            left: 2.5vw;
+                            font-size: 1vw;
+                            color: $Preto;
+                            font-weight: 500;
+                            transition: 0.5s;
+                            pointer-events: none;
+                            margin-top: -1vh;
+                        }
+                        .lengthInput{
+                            position: absolute;
+                            bottom: -4vh;
+                            right: 12.5%;
+                            width: 3.5vw;
+                            height: 75%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: $Second-font;
+                            color: $Branco;
+                            font-size: 0.75vw;
+                            font-weight: 800;
+                        }
+                    }
+                    .BlockBox input:focus ~ span, input:valid ~ span{
+                        transform:translate(-0.75vw, -3.75vh);
+                        font-size: 0.9vw;
+                        font-weight: 900;
+                    }
+                    .categ_Atreladas_Select{
+                        width: 50%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        #category-select{
+                            position: relative;
+                            width: 85%;
+                            height: 4vh;
+                            #options_btn_Subcat {
+                                all: unset;
+                                position: absolute;
+                                inset: 0;
+                                cursor: pointer;
+                                font-size: 1vw;
+                                z-index:5;
+                            }
+                            #select-button {
+                                width: 100%;
+                                height: 100%;
+                                background-color: greenyellow;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                outline: none;
+                                #selected_val_Subcat{
+                                    font-family: $Second-font;
+                                    color: $Preto;
+                                    font-size: 0.8vw;
+                                    font-weight: 900;
+                                    width: 80%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    white-space: nowrap;                  
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    padding: 0 0.75vw;
+                                    padding-top: 0.25vh;
+                                }
+                                img, svg{
+                                    z-index: 99;
+                                    position: absolute;
+                                    right: 0.35vw;
+                                    width: 2vw;
+                                    height: 100%;
+                                    padding: 0.5vh;
+                                    path{
+                                        fill: purple;
+                                    }
+                                }
+                            }
+                        }
+                        #options {
+                            z-index: 999;
+                            width: 85%;
+                            height: auto;
+                            max-height: 40vh;
+                            top: 13vh;
+                            overflow-x: hidden;
+                            overflow-y: scroll;
+                            background: greenyellow;
+                            display: none;
+                            position: absolute;
+                            padding: 0.5vw;
+                            border-radius: 0.5vw;
+                            .option_Subcat {
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                width: 100%;
+                                height: 5vh;
+                                border-bottom: 1px solid $Preto;
+                                span{
+                                    all: unset;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    white-space: nowrap;                  
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    padding-left: 0.75vw;
+                                    font-family: $Second-font;
+                                    font-size: 0.75vw;
+                                    font-weight: 800;
+                                    color: $Preto;
+                                    z-index: 5;
+                                }
+                                input[type="radio"]{
+                                    all: unset;
+                                    position: absolute;
+                                    inset: 0;
+                                    z-index: 10;
+                                }
+                                &:hover{
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        inset: 0;
+                                        background: $Cinza;
+                                        opacity: 0.5;
+                                        z-index: -1;
+                                    }
+                                }
+                                &:last-child{
+                                    border: none;
+                                }
+                            }
+                        }
+                        #options_btn_Subcat:checked + #select-button svg{
+                            transform: rotate(180deg);
+                        }
+                        #category-select:has(#options_btn_Subcat:checked) + #options {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
         }
         #whats{
+            outline: 1px solid greenyellow;
             height: 50vh;
+            padding-bottom: 7vh;
         }
     }
     footer{
