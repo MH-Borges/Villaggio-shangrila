@@ -671,7 +671,6 @@ body main #galeria .tab-content {
   margin-top: 5vh;
   width: 80%;
   height: 60vh;
-  outline: 1px solid blue;
   position: relative;
 }
 body main #galeria .tab-content .tab-pane {
@@ -730,7 +729,6 @@ body main #galeria .tab-content::before, body main #galeria .tab-content::after 
   top: 0;
   background: linear-gradient(90deg, #4B4B4D 10%, rgba(75, 75, 77, 0) 100%);
   z-index: 999;
-  outline: 1px solid red;
 }
 body main #galeria .tab-content::after {
   left: auto;

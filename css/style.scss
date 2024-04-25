@@ -616,7 +616,6 @@ body {
                 margin-top: 5vh;
                 width: 80%;
                 height: 60vh;
-                outline: 1px solid blue;
                 position: relative;
                 .tab-pane{
                     width: 100%;
@@ -680,7 +679,6 @@ body {
                     top: 0;
                     background: linear-gradient(90deg, $Cinza 10%, #4b4b4d00 100%);
                     z-index: 999;
-                    outline: 1px solid red;
                 }
                 &::after{
                     left: auto;
