@@ -738,9 +738,10 @@ body {
         }
         #localizacao{
             position: relative;
-            padding-top: 13vh;
-            outline: 1px solid blue;
-            overflow: hidden;
+            padding-top: 15vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
             .divisor{
                 position: absolute;
                 top: 0;
@@ -750,23 +751,202 @@ body {
                 z-index: -1;
                 transform: rotate(180deg);
             }
+            h2{
+                width: 100%;
+                height: 10vh;
+                font-family: $Main-font;
+                font-weight: 700;
+                color: $Cinza;
+                font-size: 2.5vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    color: $Creme;
+                    margin-left: 0.75vw;
+                }
+            }
+            h3{
+                width: 100%;
+                height: 5vh;
+                font-family: $Main-font;
+                font-weight: 500;
+                color: $Cinza;
+                font-size: 1vw;
+                text-align: center;
+            }
+            .map{
+                height: 70vh;
+                width: 45vw;
+                position: relative;
+                iframe{
+                    top: 10%;
+                    left: -11.2%;
+                    position: absolute;
+                    border: solid $Creme 10px;
+                    border-left: none;
+                    width: 104%;
+                    height: 80%;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 75%;
+                    height: 100%;
+                    left: -11.1%;
+                    top: 0;
+                    background-color: $Creme;
+                    z-index: -1;
+                    border-top-right-radius: 10vw;
+                }
+            }
+            .locais_block{
+                width: 45vw;
+                height: 70vh;
+                padding: 7.5vh 0 7.5vh 2.5vw;
+                display: flex;
+                flex-wrap: wrap;
+                .local{
+                    width: 33.3%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    img{
+                        border: 5px solid $Creme;
+                        height: 50%;
+                    }
+                    h4{
+                        width: 100%;
+                        height: 15%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $Main-font;
+                        font-weight: 700;
+                        font-size: 1.1vw;
+                        color: $Cinza;
+                        margin-top: 1vh;
+                    }
+                    p{
+                        width: 100%;
+                        font-family: $Main-font;
+                        font-weight: 300;
+                        font-size: 0.75vw;
+                        color: $Cinza;
+                        padding: 0 2vw;
+                        text-align: center;
+                    }
+                    &:nth-child(4), &:nth-child(5), &:nth-child(6){
+                        img{
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
         }
         #entrega{
-            outline: 1px solid green;
-            .progress {
+            display: flex;
+            flex-direction: column;
+            h2{
+                margin-top: 5vh;
                 width: 100%;
-                height: 50px;
+                height: 10vh;
+                font-family: $Main-font;
+                font-weight: 300;
+                color: $Cinza;
+                font-size: 2.5vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    color: $Creme;
+                    margin-left: 0.75vw;
+                    font-weight: 700;
+                }
             }
-            .progress-wrap {
-                background: #f80;
-                margin: 20px 0;
-                overflow: hidden;
-                position: relative;
-                .progress-bar {
-                    background: #ddd;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
+            .Relogio{
+                width: 100%;
+                height: 15vh;
+                display: flex;
+                justify-content: center;
+                .clock_Num{
+                    width: 8vw;
+                    margin: 0 1.5vw;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        width: 100%;
+                        height: 75%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $Main-font;
+                        font-weight: 700;
+                        font-size: 4vw;
+                        color: $Creme;
+                    }
+                    p{
+                        width: 100%;
+                        height: 25%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $Main-font;
+                        font-weight: 500;
+                        font-size: 1.1vw;
+                    }
+                }
+            }
+            .barraProgresso{
+                width: 100%;
+                height: 70vh;
+                display: flex;
+                flex-wrap: wrap;
+                .progress-block{
+                    width: 50%;
+                    height: 20%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 3.5vw;
+                    margin-top: -5%;
+                    h4, span{
+                        margin-top: auto;
+                        width: 50%;
+                        height: 20%;
+                        font-family: $Main-font;
+                        font-weight: 400;
+                        font-size: 1.25vw;
+                        color: $Cinza;
+                        display: flex;
+                        align-items: end;
+                        justify-content: left;
+                    }
+                    span{
+                        font-weight: 900;
+                        justify-content: right;
+                    }
+                    .progress-wrap {
+                        margin-top: 1vh;
+                        width: 100%;
+                        height: 30%;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 0.75vw;
+                        background: linear-gradient(90deg, rgba(75,75,77,1) 0%, rgba(217,176,106,1) 100%);
+                        .progress-bar {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            border-radius: 0;
+                            background: #C8C8C9;
+                        }
+                    }
+                    &:nth-child(1), &:nth-child(2){
+                        margin-top: 5vh;
+                    }
                 }
             }
         }
@@ -1030,9 +1210,66 @@ body {
 
         }
         #whats{
-            outline: 1px solid greenyellow;
             height: 50vh;
             padding-bottom: 7vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -6%;
+                width: 111%;
+                height: 100%;
+                background-color: $Cinza;
+                z-index: -1;
+            }
+            h2, h3{
+                width: 100%;
+                height: 8vh;
+                font-family: $Main-font;
+                font-weight: 800;
+                font-size: 3.25vw;
+                color: $Creme;
+                margin-top: 6vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h3{
+                height: auto;
+                font-size: 2vw;
+                color: $Branco;
+                font-weight: 300;
+                padding: 1vh 0;
+                margin-top: 1.5vh;
+            }
+            .btn{
+                margin-top: 10vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: 5vh;
+                width: 15vw;
+                border-radius: 0;
+                img, svg{
+                    height: 100%;
+                    position: absolute;
+                    z-index: 1;
+                }
+                p{
+                    width: 100%;
+                    all: unset;
+                    z-index: 2;
+                    font-family: $Main-font;
+                    font-weight: 900;
+                    font-size: 1.1vw;
+                    color: $Branco;
+                }
+            }
         }
     }
     footer{
@@ -1041,7 +1278,25 @@ body {
         position: absolute;
         width: 90%;
         height: 7vh;
-        outline: 1px solid cyan;
+        border-top: 5px solid $Creme;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: $Main-font;
+            font-weight: 800;
+            font-size: 0.9vw;
+            color: $Branco;
+        }
+        a{
+            width: 7.5vw;
+            height: 65%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
     
 }

@@ -380,13 +380,19 @@
                 </div>
             </div>
         </section>
-
         <section id="localizacao">
             <img class="divisor" src="assets/divisor_galeria.svg" onload="SVGInject(this)">
             <h2>Localização <span>exclusiva!</span></h2>
             <h3>Av. Manoel Ribas, 1396 - Mercês, Curitiba, Paraná </h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.503299247143!2d-49.294546888055294!3d-25.421431832460964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3fcf440b599%3A0x54b2e7c12b51ad01!2sAv.%20Manoel%20Ribas%2C%201396%20-%20Merc%C3%AAs%2C%20Curitiba%20-%20PR%2C%2080810-000!5e0!3m2!1spt-BR!2sbr!4v1714020949672!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.503299247143!2d-49.294546888055294!3d-25.421431832460964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3fcf440b599%3A0x54b2e7c12b51ad01!2sAv.%20Manoel%20Ribas%2C%201396%20-%20Merc%C3%AAs%2C%20Curitiba%20-%20PR%2C%2080810-000!5e0!3m2!1spt-BR!2sbr!4v1714020949672!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+            </div>
             <div class="locais_block">
+                <div class="local">
+                    <img src="assets/placeholder_locals.webp" alt="">
+                    <h4>Lorem Ipsum</h4>
+                    <p>XX minutos de carro, XX minutos de caminhada. XXXm de distância</p>
+                </div>
                 <div class="local">
                     <img src="assets/placeholder_locals.webp" alt="">
                     <h4>Lorem Ipsum</h4>
@@ -417,55 +423,89 @@
         <section id="entrega">
             <h2>Tempo para a <span>entrega!</span></h2>
 
-            <div id="Relogio">
-                <div class="meses">
-                    <span class="digit" id="months"></span>
-                    Meses
+            <div class="Relogio">
+                <div class="clock_Num">
+                    <span id="months"></span>
+                    <p>Meses</p>
                 </div>
-                <div class="dias">
-                    <span class="digit" id="days"></span>
-                    Dias
+                <div class="clock_Num">
+                    <span id="days"></span>
+                    <p>Dias</p>
                 </div>
-                <div class="horas">
-                    <span class="digit" id="hours"></span>
-                    Horas
+                <div class="clock_Num">
+                    <span id="hours"></span>
+                    <p>Horas</p>
                 </div>
-                <div class="minutos">
-                    <span class="digit" id="minutes"></span>
-                    Minutos
+                <div class="clock_Num">
+                    <span id="minutes"></span>
+                    <p>Minutos</p>
                 </div>
-                <div class="segundos">
-                    <span class="digit" id="seconds"></span>
-                    Segundos
+                <div class="clock_Num">
+                    <span id="seconds"></span>
+                    <p>Segundos</p>
                 </div>
             </div>
             
-            <div class="progress-wrap progress" data-progress-percent="100">
-                <div class="progress-bar progress"></div>
+            <div class="barraProgresso">
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>100%</span>
+                    <div class="progress-wrap" data-progress-percent="100">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>100%</span>
+                    <div class="progress-wrap" data-progress-percent="100">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>75%</span>
+                    <div class="progress-wrap" data-progress-percent="75">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>100%</span>
+                    <div class="progress-wrap" data-progress-percent="100">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>25%</span>
+                    <div class="progress-wrap" data-progress-percent="25">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>75%</span>
+                    <div class="progress-wrap" data-progress-percent="75">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>50%</span>
+                    <div class="progress-wrap" data-progress-percent="50">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h4>Lorem Ipsum</h4>
+                    <span>50%</span>
+                    <div class="progress-wrap" data-progress-percent="50">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
             </div>
-            <div class="progress-wrap progress" data-progress-percent="10">
-                <div class="progress-bar progress"></div>
-            </div>
-            <div class="progress-wrap progress" data-progress-percent="75">
-                <div class="progress-bar progress"></div>
-            </div>
-            <div class="progress-wrap progress" data-progress-percent="50">
-                <div class="progress-bar progress"></div>
-            </div>
-            <div class="progress-wrap progress" data-progress-percent="75">
-                <div class="progress-bar progress"></div>
-            </div>
-            <div class="progress-wrap progress" data-progress-percent="75">
-                <div class="progress-bar progress"></div>
-            </div>
-            <div class="progress-wrap progress" data-progress-percent="75">
-                <div class="progress-bar progress"></div>
-            </div>
-            <div class="progress-wrap progress" data-progress-percent="75">
-                <div class="progress-bar progress"></div>
-            </div>
-
         </section>
+
         <section id="contato">
             FORMULARIO DE CONTATO
             <img src="assets/contato.webp" alt="">
@@ -531,9 +571,10 @@
 
             <h3>Garanta a casa aonde a sua família criará as suas memórias!</h3>
         </section>
+
         <section id="whats">
             <h2>Quer saber mais?</h2>
-            <h2>Entre em contato</h2>
+            <h3>Entre em contato</h3>
 
             <a class="btn" target="_blank" href="https://ww.google.com">
                 <img src="assets/icons/btn_contato.svg" onload="SVGInject(this)">
@@ -545,7 +586,9 @@
         <p>
             ©<span id="data_footer"></span> Vilaggio shangrilá - Criação e desenvolvimento por:
         </p>
-        <img src="assets/icons/Vl7_logo.webp" alt="">
+        <a href="" target="_blank">
+            <img src="assets/icons/Vl7_logo.webp" alt="">
+        </a>
     </footer>
 
 </body>

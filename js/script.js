@@ -1,5 +1,4 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-
     document.getElementById("data_footer").textContent = new Date().getFullYear();
 
     //galeria
