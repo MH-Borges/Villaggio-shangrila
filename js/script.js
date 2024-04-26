@@ -138,12 +138,12 @@ function OptionSelection(selectedValueId, optionsButtonId, optionInputsClass) {
 $(document).ready(function () {
     $('#telefone').mask('(00) 00000 - 0000');
 
-    $('#Enviar_Contato').click(function (e) {
+    $('#Enviar_Contato').submit(function (e) {
         event.preventDefault();
-        $('#Alertmsg').removeClass('text-danger');
-        $('#Alertmsg').removeClass('text-success');
-        $('#Alertmsg').addClass('text-info');
-        $('#Alertmsg').text('Enviando');
+        $('#msg_form').removeClass('text-danger');
+        $('#msg_form').removeClass('text-success');
+        $('#msg_form').addClass('text-info');
+        $('#msg_form').text('Enviando');
         $.ajax({
             url: "email.php",
             method: "post",
@@ -151,9 +151,9 @@ $(document).ready(function () {
             dataType: "text",
             success: function (Alert) {
                 if (Alert.trim() === 'Email enviado com sucesso!') {
-                    $('#Alertmsg').removeClass('text-info');
-                    $('#Alertmsg').addClass('text-success');
-                    $('#Alertmsg').text(Alert);
+                    $('#msg_form').removeClass('text-info');
+                    $('#msg_form').addClass('text-success');
+                    $('#msg_form').text(Alert);
                     $('#nome').val('');
                     $('#email').val('');
                     $('#telefone').val('');
@@ -162,21 +162,21 @@ $(document).ready(function () {
                     setTimeout(() => { window.location.reload(); }, 5000)
                 }
                 else if (Alert.trim() == 'Preencha o Campo de Nome') {
-                    $('#Alertmsg').addClass('text-danger');
-                    $('#Alertmsg').text(Alert);
+                    $('#msg_form').addClass('text-danger');
+                    $('#msg_form').text(Alert);
                 }
                 else if (Alert.trim() == 'Preencha o Campo do Email') {
-                    $('#Alertmsg').addClass('text-danger');
-                    $('#Alertmsg').text(Alert);
+                    $('#msg_form').addClass('text-danger');
+                    $('#msg_form').text(Alert);
                 }
     
                 else if (Alert.trim() == 'Preencha o Campo de Mensagem') {
-                    $('#Alertmsg').addClass('text-danger');
-                    $('#Alertmsg').text(Alert);
+                    $('#msg_form').addClass('text-danger');
+                    $('#msg_form').text(Alert);
                 }
                 else {
-                    $('#Alertmsg').addClass('text-danger');
-                    $('#Alertmsg').text('Erro ao enviar o formulario, provaveis problemas com o servidor, você pode tentar nos mandar mensagem via Instagram ou Whatsapp');
+                    $('#msg_form').addClass('text-danger');
+                    $('#msg_form').text('Erro ao enviar o formulario, provaveis problemas com o servidor, você pode tentar nos mandar mensagem via Instagram ou Whatsapp');
                 }
             }
         })
