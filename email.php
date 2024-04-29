@@ -3,8 +3,9 @@
     $nome = addslashes($_POST['nome']);
     $email = filter_var(addslashes($_POST['email']), FILTER_SANITIZE_EMAIL);
     $telefone = addslashes($_POST['telefone']);
-    $assunto = addslashes($_POST['assunto']);
-    $mensagem = addslashes($_POST['mensagem']);
+    $planta = addslashes($_POST['planta_select']);
+
+    var_dump($nome);
 
     if($nome == ""){
         echo 'Preencha o Campo de Nome';
@@ -12,10 +13,6 @@
     }
     if($email == ""){
         echo 'Preencha o Campo do Email';
-        exit();
-    }
-    if($mensagem == ""){    
-        echo 'Preencha o Campo de Mensagem';
         exit();
     }
 

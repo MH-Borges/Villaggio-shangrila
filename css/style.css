@@ -1020,6 +1020,7 @@ body main #contato .form_block {
   border-radius: 1.5vw;
   border-bottom-left-radius: 10vw;
   padding: 1vh 2vw;
+  position: relative;
 }
 body main #contato .form_block h2 {
   width: 100%;
@@ -1228,6 +1229,20 @@ body main #contato .form_block form .btn p {
   font-size: 1.1vw;
   color: #FFFFFF;
   margin-left: 1.4vw;
+}
+body main #contato .form_block #msg_form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  text-align: center;
 }
 body main #contato h3 {
   margin-left: auto;

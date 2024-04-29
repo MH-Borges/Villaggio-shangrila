@@ -136,12 +136,10 @@ function OptionSelection(selectedValueId, optionsButtonId, optionInputsClass) {
 $(document).ready(function () {
     $('#telefone').mask('(00) 00000 - 0000');
 
-    $('#Enviar_Contato').submit(function (e) {
-        event.preventDefault();
+    $('#formulario').submit(function (e) {
+        e.preventDefault();
         $('#msg_form').removeClass('text-danger');
         $('#msg_form').removeClass('text-success');
-        $('#msg_form').addClass('text-info');
-        $('#msg_form').text('Enviando');
         $.ajax({
             url: "email.php",
             method: "post",
@@ -149,14 +147,8 @@ $(document).ready(function () {
             dataType: "text",
             success: function (Alert) {
                 if (Alert.trim() === 'Email enviado com sucesso!') {
-                    $('#msg_form').removeClass('text-info');
                     $('#msg_form').addClass('text-success');
                     $('#msg_form').text(Alert);
-                    $('#nome').val('');
-                    $('#email').val('');
-                    $('#telefone').val('');
-                    $('#assunto').val('');
-                    $('#mensagem').val('');
                     setTimeout(() => { window.location.reload(); }, 5000)
                 }
                 else if (Alert.trim() == 'Preencha o Campo de Nome') {
@@ -164,11 +156,6 @@ $(document).ready(function () {
                     $('#msg_form').text(Alert);
                 }
                 else if (Alert.trim() == 'Preencha o Campo do Email') {
-                    $('#msg_form').addClass('text-danger');
-                    $('#msg_form').text(Alert);
-                }
-    
-                else if (Alert.trim() == 'Preencha o Campo de Mensagem') {
                     $('#msg_form').addClass('text-danger');
                     $('#msg_form').text(Alert);
                 }
@@ -181,8 +168,10 @@ $(document).ready(function () {
     });
 });
 
-$('#form_Subcategorias').submit(function (e) {
+$('#formulario').submit(function (e) {
     e.preventDefault();
+    $('#msg_form').removeClass('text-danger');
+    $('#msg_form').removeClass('text-success');
     $.ajax({
         url: "Produtos/subCategoria/insert_Edit.php",
         method: "post",
