@@ -1029,7 +1029,7 @@ body main #contato {
   display: flex;
   align-items: center;
 }
-body main #contato img {
+body main #contato #Banner_contato {
   position: absolute;
   width: 111%;
   height: 70%;
