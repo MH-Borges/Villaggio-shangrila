@@ -48,14 +48,9 @@
             <img class="Bg_home" src="assets/Bg_Home.webp" alt="banner Villaggio">
             <div class="banner_Block">
                 <img id="logo" src="assets/icons/logo.webp" alt="Logo Villaggio">
-                <h1>Villaggio shangrilá</h1>
+                <h1 class="hide">Villaggio shangrilá</h1>
                 <h2>Qualidade e bem estar para a sua família!</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud.</h4>
-                <a class="btn links" href="#contato">
-                    <img src="assets/icons/btn_banner.svg" onload="SVGInject(this)">
-                    <p>Garanta o seu</p>
-                    <img src="assets/icons/seta_L.svg" onload="SVGInject(this)">
-                </a>
+                <a class="btn links" href="#contato"> Quero garantir o meu imovel </a>
             </div>
         </section>
         <section id="condominio">
@@ -72,7 +67,7 @@
 
             <div class="cond_block">
                 <p>Lançamento</p>
-                <h2>Villaggio shangrilá</h2>
+                <img id="Villagio" src="assets/icons/Villagio.svg" onload="SVGInject(this)">
                 <h3>Entrega: DEZ/2024</h3>
                 <h4><img src="assets/icons/mapa.svg" onload="SVGInject(this)">Av. Manoel Ribas, 1396 - Mercês, Curitiba, Paraná </h4>
 
@@ -85,10 +80,7 @@
 
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
             
-                <a class="btn links" href="#contato">
-                    <img src="assets/icons/btn_cond.svg" onload="SVGInject(this)">
-                    <p>Saiba mais!</p>
-                </a>
+                <a class="btn links" href="#contato"> Quero saber mais! </a>
             </div>
 
             <div class="block_imgCond">
@@ -118,10 +110,7 @@
                         <h4>999 <span>m²</span></h4>
                         <img src="assets/C2_Quartos.webp" alt="Planta casa 2 quartos">
 
-                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">
-                            <img src="assets/icons/btn_plantas.svg" onload="SVGInject(this)">
-                            <p>Veja as fotos</p>
-                        </button>
+                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">Quero ver as fotos da casa</button>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="C3_Quartos">
@@ -142,10 +131,7 @@
                         <h4>999 m²</h4>
                         <img src="assets/C3_Quartos.webp" alt="Planta casa 2 quartos">
 
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#C3_Quartos_Modal">
-                            <img src="assets/icons/btn_plantas.svg" onload="SVGInject(this)">
-                            <p>Veja as fotos</p>
-                        </button>
+                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">Quero ver as fotos da casa</button>
                     </div>
 
                 </div>
@@ -157,7 +143,7 @@
                     <div class="modal-content">
                         <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-body">
-
+                            <p>Fotos meramente ilustrativas!</p>
                             <div id="IndicatorsC2" class="carousel slide">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#IndicatorsC2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -200,7 +186,6 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -211,6 +196,7 @@
                     <div class="modal-content">
                         <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-body">
+                            <p>Fotos meramente ilustrativas!</p>
 
                             <div id="IndicatorsC3" class="carousel slide">
                                 <div class="carousel-indicators">
@@ -273,48 +259,12 @@
             <h2>Conheça nossos espaços</h2>
 
             <nav class="nav nav-pills">
-                <a class="nav-link active" data-bs-toggle="pill" href="#Todos">Todas</a>
-                <a class="nav-link" data-bs-toggle="pill" href="#Entrada_fachada">Entrada e fachada</a>
+                <a class="nav-link active" data-bs-toggle="pill" href="#Entrada_fachada">Entrada e fachada</a>
                 <a class="nav-link" data-bs-toggle="pill" href="#Salao_festa">Salão de festa</a>
                 <a class="nav-link" data-bs-toggle="pill" href="#Area_comum">Área comum</a>
             </nav>
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="Todos">
-                    <div class="splide" role="group">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <button type="button" onclick="OpenImg('Guarita_Fachadas/Fachada01.webp')"><img src="assets/Guarita_Fachadas/Fachada01.webp" alt=""></button>
-                                    <button type="button" onclick="OpenImg('Guarita_Fachadas/Fachada02.webp')"><img src="assets/Guarita_Fachadas/Fachada02.webp" alt=""></button>
-                                </li>
-                                <li class="splide__slide">
-                                    <button type="button" onclick="OpenImg('Guarita_Fachadas/Guarita01.webp')"><img src="assets/Guarita_Fachadas/Guarita01.webp" alt=""></button>
-                                    <button type="button" onclick="OpenImg('Guarita_Fachadas/Guarita02.webp')"><img src="assets/Guarita_Fachadas/Guarita02.webp" alt=""></button>
-                                </li>
-                                <li class="splide__slide">
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer01.webp')"><img src="assets/Salao_Festas/Lazer01.webp" alt=""></button>
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer02.webp')"><img src="assets/Salao_Festas/Lazer02.webp" alt=""></button>
-                                </li>
-                                <li class="splide__slide">
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer03.webp')"><img src="assets/Salao_Festas/Lazer03.webp" alt=""></button>
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer04.webp')"><img src="assets/Salao_Festas/Lazer04.webp" alt=""></button>
-                                </li>
-                                <li class="splide__slide">
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer05.webp')"><img src="assets/Salao_Festas/Lazer05.webp" alt=""></button>
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer06.webp')"><img src="assets/Salao_Festas/Lazer06.webp" alt=""></button>
-                                </li>
-                                <li class="splide__slide">
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer_Int01.webp')"><img src="assets/Salao_Festas/Lazer_Int01.webp" alt=""></button>
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer_Int02.webp')"><img src="assets/Salao_Festas/Lazer_Int02.webp" alt=""></button>
-                                </li>
-                                <li class="splide__slide">
-                                    <button type="button" onclick="OpenImg('Salao_Festas/Lazer_Int03.webp')"><img src="assets/Salao_Festas/Lazer_Int03.webp" alt=""></button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="Entrada_fachada">
+                <div class="tab-pane fade show active" id="Entrada_fachada">
                     <div class="splide" role="group">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -373,6 +323,7 @@
                     <div class="modal-content">
                         <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-body">
+                            <p>Fotos meramente ilustrativas!</p>
                             <img id="img_Adapt" src="assets/icons/logo.webp">
                         </div>
                     </div>
@@ -419,6 +370,7 @@
                 </div>
             </div>
         </section>
+
         <section id="entrega">
             <h2>Tempo para a <span>entrega!</span></h2>
 
@@ -546,10 +498,7 @@
                         </ul>
                     </div>
 
-                    <button class="btn" type="submit">
-                        <img src="assets/icons/btn_form.svg" onload="SVGInject(this)">
-                        <p>Entrar na lista!</p>
-                    </button>
+                    <button class="btn" type="submit">Quero entrar na lista!</button>
                 </form>
                 <div id="msg_form"></div> 
             </div>
@@ -560,11 +509,7 @@
         <section id="whats">
             <h2>Quer saber mais?</h2>
             <h3>Entre em contato</h3>
-
-            <a class="btn" target="_blank" href="https://ww.google.com">
-                <img src="assets/icons/btn_contato.svg" onload="SVGInject(this)">
-                <p>Fale conosco!</p>
-            </a>
+            <a class="btn" target="_blank" href="https://ww.google.com"> Mandar mensagem agora! </a>
         </section>
     </main>
     <footer>

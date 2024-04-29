@@ -1,20 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
 
-@font-face{
-    font-family: "Brandbe";
-    font-weight: 800;
-    src: local('Brandbe Bold'), url('../assets/Brandbe_Extra_Bold.otf') format('opentype');
-    font-display: swap;
-}
-
-$Title-font: 'Brandbe', sans-serif;
 $Main-font: 'Roboto', sans-serif;
 $Second-font: 'Antonio', sans-serif;
-
-
-////// Brandbe pesos
-// Extrabold = 800
 
 ////// Roboto pesos
 // Thin = 100

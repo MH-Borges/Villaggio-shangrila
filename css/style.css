@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
-@font-face {
-  font-family: "Brandbe";
-  font-weight: 800;
-  src: local("Brandbe Bold"), url("../assets/Brandbe_Extra_Bold.otf") format("opentype");
-  font-display: swap;
-}
 *,
 *::after,
 *::before {
@@ -68,7 +62,7 @@ body main .whats_link {
   width: 4.5vw;
   height: 4.5vw;
   border-radius: 50%;
-  background: #D9B06A;
+  background: #25D366;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,7 +72,7 @@ body main .whats_link {
 body main .whats_link img, body main .whats_link svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 2px 2px #0F0F0F);
+  filter: drop-shadow(0 1px 2px #0F0F0F);
 }
 body main section {
   width: 90%;
@@ -100,10 +94,10 @@ body main #banner::before {
   position: absolute;
   top: 0;
   left: -6%;
-  width: 32.75vw;
+  width: 32vw;
   height: 100vh;
-  background-color: #4B4B4D;
-  border-bottom-right-radius: 10vw;
+  background-color: #F2F2F2;
+  opacity: 0.1;
 }
 body main #banner .banner_Block {
   position: relative;
@@ -113,9 +107,9 @@ body main #banner .banner_Block {
   flex-direction: column;
 }
 body main #banner .banner_Block #logo {
-  width: 8vw;
+  width: 12vw;
   height: auto;
-  margin: 3vh 0 14vh;
+  margin: 5vh 0 15vh;
 }
 body main #banner .banner_Block h1 {
   font-family: "Antonio", sans-serif;
@@ -128,14 +122,6 @@ body main #banner .banner_Block h1 {
   align-items: center;
   margin-bottom: 10vh;
 }
-body main #banner .banner_Block h1::before {
-  content: "";
-  position: absolute;
-  right: 12%;
-  width: 32%;
-  height: 3px;
-  background: #D9B06A;
-}
 body main #banner .banner_Block h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -143,40 +129,28 @@ body main #banner .banner_Block h2 {
   color: #FFFFFF;
   padding-right: 12%;
   line-height: 5.5vh;
-  margin-bottom: 3vh;
-}
-body main #banner .banner_Block h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 0.95vw;
-  color: #FFFFFF;
-  padding-right: 12%;
-  line-height: 2.5vh;
-  margin-bottom: 8vh;
+  margin: 5vh 0;
 }
 body main #banner .banner_Block .btn {
+  margin-top: 20vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
-  height: 5.5vh;
-  width: 15.5vw;
-}
-body main #banner .banner_Block .btn img, body main #banner .banner_Block .btn svg {
-  position: absolute;
-  z-index: 1;
-}
-body main #banner .banner_Block .btn img:last-child, body main #banner .banner_Block .btn svg:last-child {
-  right: 0;
-  width: auto;
-  height: 1.75vh;
-}
-body main #banner .banner_Block .btn p {
-  z-index: 2;
+  height: 5vh;
+  width: 20vw;
+  background-color: #D9B06A;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 1.25vw;
   color: #FFFFFF;
-  margin-left: 1.3vw;
+  box-shadow: 0px 5px 5px #0F0F0F;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main #banner .banner_Block .btn:hover {
+  transform: translateY(-5px);
+  font-size: 1.35vw;
 }
 body main #condominio {
   display: flex;
@@ -211,6 +185,7 @@ body main #condominio .menu ul li {
   justify-content: center;
   border-left: 1px solid #D9B06A;
   border-right: 1px solid #D9B06A;
+  position: relative;
 }
 body main #condominio .menu ul li:first-child {
   border-left: none;
@@ -229,6 +204,17 @@ body main #condominio .menu ul li a {
   font-size: 0.9vw;
   color: #4B4B4D;
   letter-spacing: 0.05vw;
+}
+body main #condominio .menu ul li a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4B4B4D;
+  z-index: -1;
+  opacity: 0.15;
 }
 body main #condominio .fixed {
   position: fixed;
@@ -260,11 +246,10 @@ body main #condominio .cond_block p {
   letter-spacing: 0.15vw;
   color: #FFFFFF;
 }
-body main #condominio .cond_block h2 {
-  font-family: "Brandbe", sans-serif;
-  font-size: 5.25vw;
-  letter-spacing: 0.75vw;
-  color: #FFFFFF;
+body main #condominio .cond_block #Villagio {
+  width: 90%;
+  height: 7.5vh;
+  margin-top: 2vh;
 }
 body main #condominio .cond_block h3 {
   font-family: "Roboto", sans-serif;
@@ -329,23 +314,22 @@ body main #condominio .cond_block .btn {
   margin-top: 5vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
-  height: 5.5vh;
-  width: 15.5vw;
-}
-body main #condominio .cond_block .btn img, body main #condominio .cond_block .btn svg {
-  position: absolute;
-  z-index: 1;
-  height: auto;
-}
-body main #condominio .cond_block .btn p {
-  all: unset;
-  z-index: 2;
+  height: 5vh;
+  width: 13vw;
+  background-color: #4B4B4D;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 1.25vw;
   color: #FFFFFF;
-  margin-left: 1.4vw;
+  box-shadow: 0px 5px 5px #0F0F0F;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main #condominio .cond_block .btn:hover {
+  transform: translateY(-5px);
+  font-size: 1.35vw;
 }
 body main #condominio .block_imgCond {
   width: 33%;
@@ -397,6 +381,19 @@ body main #plantas .nav-pills a {
   border-radius: 5vw;
   padding: 0.5vh 0;
   letter-spacing: 0.15vw;
+  position: relative;
+}
+body main #plantas .nav-pills a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4B4B4D;
+  z-index: -1;
+  opacity: 0.075;
+  border-radius: 5vw;
 }
 body main #plantas .nav-pills .active {
   background: #D9B06A;
@@ -491,32 +488,30 @@ body main #plantas .tab-content .espaco_planta h4::before {
   border-bottom-right-radius: 10vw;
 }
 body main #plantas .tab-content .espaco_planta img {
-  margin: 5vh 13vw 0 auto;
-  width: 45vw;
+  margin: 0 10vw 0 auto;
+  width: 60vw;
   height: auto;
 }
 body main #plantas .tab-content .espaco_planta .btn {
-  margin: 30vh 5vw 0 auto;
+  margin: 12vh 5vw 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   height: 5vh;
-  width: 13vw;
-}
-body main #plantas .tab-content .espaco_planta .btn img, body main #plantas .tab-content .espaco_planta .btn svg {
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-}
-body main #plantas .tab-content .espaco_planta .btn p {
-  all: unset;
-  z-index: 2;
+  width: 21.5vw;
+  background-color: #D9B06A;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
   color: #FFFFFF;
-  margin-left: 1.4vw;
+  box-shadow: 0px 5px 5px #4B4B4D;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main #plantas .tab-content .espaco_planta .btn:hover {
+  transform: translateY(-5px);
+  font-size: 1.65vw;
 }
 body main #plantas #C2_Quartos_Modal .modal-dialog, body main #plantas #C3_Quartos_Modal .modal-dialog {
   width: 75vw;
@@ -559,6 +554,17 @@ body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body, b
   width: 100%;
   height: 100%;
   padding: 0;
+  position: relative;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body p, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body p {
+  position: absolute;
+  bottom: -5vh;
+  left: -11vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  z-index: 99;
 }
 body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 {
   width: 100%;
@@ -657,12 +663,24 @@ body main #galeria .nav-pills a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 body main #galeria .nav-pills a:first-child {
   border-left: none;
 }
 body main #galeria .nav-pills a:last-child {
   border-right: none;
+}
+body main #galeria .nav-pills a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #D9B06A;
+  z-index: -1;
+  opacity: 0.15;
 }
 body main #galeria .nav-pills .active {
   background: #D9B06A;
@@ -776,6 +794,16 @@ body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-body {
   width: 100%;
   height: 100%;
   padding: 0;
+}
+body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-body p {
+  position: absolute;
+  bottom: -5vh;
+  left: -11vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  z-index: 99;
 }
 body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-body img {
   width: 100%;
@@ -1138,10 +1166,9 @@ body main #contato .form_block form .seletor #select #select-button #selected_va
 body main #contato .form_block form .seletor #select #select-button img, body main #contato .form_block form .seletor #select #select-button svg {
   z-index: 99;
   position: absolute;
-  right: 0.35vw;
-  width: 2vw;
+  right: 0.5vw;
+  width: 1.25vw;
   height: 100%;
-  padding: 0.6vh;
 }
 body main #contato .form_block form .seletor #select #select-button img path, body main #contato .form_block form .seletor #select #select-button svg path {
   fill: #FFFFFF;
@@ -1209,26 +1236,24 @@ body main #contato .form_block form .seletor #select:has(#options_btn:checked) +
 body main #contato .form_block form .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   height: 5vh;
-  width: 13vw;
+  width: 14vw;
   margin-left: auto;
   margin-top: 3vh;
-}
-body main #contato .form_block form .btn img, body main #contato .form_block form .btn svg {
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-}
-body main #contato .form_block form .btn p {
-  all: unset;
-  z-index: 2;
+  background-color: #4B4B4D;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 1.1vw;
   color: #FFFFFF;
-  margin-left: 1.4vw;
+  box-shadow: 0px 5px 5px #0F0F0F;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main #contato .form_block form .btn:hover {
+  transform: translateY(-5px);
+  font-size: 1.25vw;
 }
 body main #contato .form_block #msg_form {
   position: absolute;
@@ -1299,22 +1324,19 @@ body main #whats .btn {
   justify-content: center;
   position: relative;
   height: 5vh;
-  width: 15vw;
-  border-radius: 0;
-}
-body main #whats .btn img, body main #whats .btn svg {
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-}
-body main #whats .btn p {
-  width: 100%;
-  all: unset;
-  z-index: 2;
+  width: 17vw;
+  background-color: #D9B06A;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 1.1vw;
   color: #FFFFFF;
+  box-shadow: 0px 5px 5px #0F0F0F;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main #whats .btn:hover {
+  transform: translateY(-5px);
+  font-size: 1.25vw;
 }
 body footer {
   bottom: 0;
