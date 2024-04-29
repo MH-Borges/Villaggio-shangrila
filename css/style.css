@@ -1019,7 +1019,6 @@ body main #contato .form_block {
   background-color: #D9B06A;
   border-radius: 1.5vw;
   border-bottom-left-radius: 10vw;
-  outline: 1px solid red;
   padding: 1vh 2vw;
 }
 body main #contato .form_block h2 {
@@ -1045,34 +1044,48 @@ body main #contato .form_block form .BlockBox {
   height: 20%;
   position: relative;
   display: flex;
-  outline: 1px solid red;
+  align-items: center;
+  justify-content: center;
 }
 body main #contato .form_block form .BlockBox input {
-  width: 100% !important;
-  margin-left: 2.5%;
-  font-size: 1vw;
-  color: orange;
+  width: 90% !important;
+  height: 50%;
   border: none;
   background: none;
   outline: none;
   padding: 2vh 0.5vw;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
-  outline: 1px solid blue;
+  font-size: 1vw;
+  color: #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
 }
 body main #contato .form_block form .BlockBox p, body main #contato .form_block form .BlockBox span {
-  font-weight: 700;
   position: absolute;
-  left: 1vw;
-  top: 1.1vw;
-  font-size: 1.1vw;
+  left: 2vw;
+  top: 1.75vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #FFFFFF;
   transition: 0.5s;
   pointer-events: none;
-  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
 }
-body main #contato .form_block form .BlockBox input:focus ~ p {
-  transform: translate(-1vw, -5.5vh);
-  font-size: 1.25vw;
-  color: blue;
+body main #contato .form_block form .BlockBox:nth-child(1) span {
+  left: 9.3vw;
+  color: #4B4B4D;
+  font-weight: 900;
+}
+body main #contato .form_block form .BlockBox:nth-child(2) span {
+  left: 5vw;
+  color: #4B4B4D;
+  font-weight: 900;
+}
+body main #contato .form_block form .BlockBox input:focus ~ p, body main #contato .form_block form .BlockBox input:focus ~ span {
+  transform: translate(-0.5vw, -2.5vh);
+  font-size: 1vw;
 }
 body main #contato .form_block form .seletor {
   display: flex;
@@ -1081,20 +1094,24 @@ body main #contato .form_block form .seletor {
   justify-content: center;
   position: relative;
 }
-body main #contato .form_block form .seletor #category-select {
+body main #contato .form_block form .seletor #select {
   position: relative;
-  width: 85%;
-  height: 4vh;
+  width: 90% !important;
+  height: 50%;
+  border-bottom: 3px solid #FFFFFF;
 }
-body main #contato .form_block form .seletor #category-select #options_btn_Subcat {
+body main #contato .form_block form .seletor #select #options_btn {
   all: unset;
   position: absolute;
   inset: 0;
   cursor: pointer;
-  font-size: 1vw;
   z-index: 5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 1vw;
+  color: #FFFFFF;
 }
-body main #contato .form_block form .seletor #category-select #select-button {
+body main #contato .form_block form .seletor #select #select-button {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1102,11 +1119,11 @@ body main #contato .form_block form .seletor #category-select #select-button {
   position: relative;
   outline: none;
 }
-body main #contato .form_block form .seletor #category-select #select-button #selected_val_Subcat {
-  font-family: "Antonio", sans-serif;
-  color: #000000;
-  font-size: 0.8vw;
-  font-weight: 900;
+body main #contato .form_block form .seletor #select #select-button #selected_val {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 1vw;
+  color: #FFFFFF;
   width: 80%;
   height: 100%;
   display: flex;
@@ -1117,40 +1134,39 @@ body main #contato .form_block form .seletor #category-select #select-button #se
   padding: 0 0.75vw;
   padding-top: 0.25vh;
 }
-body main #contato .form_block form .seletor #category-select #select-button img, body main #contato .form_block form .seletor #category-select #select-button svg {
+body main #contato .form_block form .seletor #select #select-button img, body main #contato .form_block form .seletor #select #select-button svg {
   z-index: 99;
   position: absolute;
   right: 0.35vw;
   width: 2vw;
   height: 100%;
-  padding: 0.5vh;
+  padding: 0.6vh;
 }
-body main #contato .form_block form .seletor #category-select #select-button img path, body main #contato .form_block form .seletor #category-select #select-button svg path {
+body main #contato .form_block form .seletor #select #select-button img path, body main #contato .form_block form .seletor #select #select-button svg path {
   fill: #FFFFFF;
 }
 body main #contato .form_block form .seletor #options {
   z-index: 999;
-  width: 85%;
+  width: 90%;
   height: auto;
   max-height: 40vh;
-  top: 13vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background: greenyellow;
+  top: 6.75vh;
+  background: #0F0F0F;
   display: none;
   position: absolute;
-  padding: 0.5vw;
-  border-radius: 0.5vw;
+  padding: 1vh 1vw;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
-body main #contato .form_block form .seletor #options .option_Subcat {
+body main #contato .form_block form .seletor #options .option {
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
   height: 5vh;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #F2F2F2;
 }
-body main #contato .form_block form .seletor #options .option_Subcat span {
+body main #contato .form_block form .seletor #options .option span {
   all: unset;
   width: 100%;
   height: 100%;
@@ -1160,19 +1176,19 @@ body main #contato .form_block form .seletor #options .option_Subcat span {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 0.75vw;
-  font-family: "Antonio", sans-serif;
-  font-size: 0.75vw;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
-  color: #000000;
+  font-size: 1vw;
+  color: #D9B06A;
   z-index: 5;
 }
-body main #contato .form_block form .seletor #options .option_Subcat input[type=radio] {
+body main #contato .form_block form .seletor #options .option input[type=radio] {
   all: unset;
   position: absolute;
   inset: 0;
   z-index: 10;
 }
-body main #contato .form_block form .seletor #options .option_Subcat:hover::before {
+body main #contato .form_block form .seletor #options .option:hover::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1180,13 +1196,13 @@ body main #contato .form_block form .seletor #options .option_Subcat:hover::befo
   opacity: 0.5;
   z-index: -1;
 }
-body main #contato .form_block form .seletor #options .option_Subcat:last-child {
+body main #contato .form_block form .seletor #options .option:last-child {
   border: none;
 }
-body main #contato .form_block form .seletor #options_btn_Subcat:checked + #select-button svg {
+body main #contato .form_block form .seletor #options_btn:checked + #select-button svg {
   transform: rotate(180deg);
 }
-body main #contato .form_block form .seletor #category-select:has(#options_btn_Subcat:checked) + #options {
+body main #contato .form_block form .seletor #select:has(#options_btn:checked) + #options {
   display: block;
 }
 body main #contato .form_block form .btn {
@@ -1195,6 +1211,8 @@ body main #contato .form_block form .btn {
   position: relative;
   height: 5vh;
   width: 13vw;
+  margin-left: auto;
+  margin-top: 3vh;
 }
 body main #contato .form_block form .btn img, body main #contato .form_block form .btn svg {
   height: 100%;

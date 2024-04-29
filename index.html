@@ -513,11 +513,11 @@
                 <form method="POST">
                     <div class="BlockBox">
                         <input type="text" name="nome" id="nome" required>
-                        <p>Nome completo<span>*</span></p>
+                        <p>Nome completo</p><span>*</span>
                     </div>
                     <div class="BlockBox">
                         <input type="text" name="email" id="email" required>
-                        <p>E-mail<span>*</span></p>
+                        <p>E-mail</p><span>*</span>
                     </div>
                     <div class="BlockBox">
                         <input type="text" name="telefone" id="telefone" required>
@@ -526,21 +526,21 @@
                     
                     <!-- Select -->
                     <div class="BlockBox seletor">
-                        <div id="category-select">
-                            <input type="checkbox" id="options_btn_Subcat" onchange="OptionSelection('selected_val_Subcat', 'options_btn_Subcat', 'option_Subcat');">
+                        <div id="select">
+                            <input type="checkbox" id="options_btn" onchange="OptionSelection('selected_val', 'options_btn', 'option');">
 
                             <div id="select-button">
-                                <div id='selected_val_Subcat'> Escolha sua planta </div>
+                                <div id='selected_val'> Escolha sua planta </div>
                                 <img src="../../assets/icons/seta.svg" onload="SVGInject(this)">
                             </div>
                         </div>
                         <ul id="options">
-                            <li class='option_Subcat'>
-                                <input type='radio' name='categ_Atreladas' value='C2' data-label='Casa com 2 quartos'>
+                            <li class='option'>
+                                <input type='radio' name='planta_select' value='C2' data-label='Casa com 2 quartos'>
                                 <span class='label'>Casa com 2 quartos</span>
                             </li>
-                            <li class='option_Subcat'>
-                                <input type='radio' name='categ_Atreladas' value='C3' data-label='Casa com 3 quartos'>
+                            <li class='option'>
+                                <input type='radio' name='planta_select' value='C3' data-label='Casa com 3 quartos'>
                                 <span class='label'>Casa com 3 quartos</span>
                             </li>
                         </ul>

@@ -120,8 +120,6 @@ function moveProgressBar() {
     });
 }
 
-
-
 function OptionSelection(selectedValueId, optionsButtonId, optionInputsClass) {
     let selectedValue = document.getElementById(selectedValueId),
         optionsViewButton = document.getElementById(optionsButtonId),
