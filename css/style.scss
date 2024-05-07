@@ -301,6 +301,83 @@ body {
                 }
             }
         }
+        #Club{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            h2{
+                width: 100%;
+                height: 6vh;
+                font-family: $Main-font;
+                font-weight: 500;
+                color: $Cinza;
+                font-size: 2.5vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    color: $Creme;
+                    margin-left: 0.75vw;
+                    font-weight: 700;
+                }
+            }
+            #bannerClub{
+                position: absolute;
+                top: 7vh;
+                left: -6%;
+                width: 111%;
+                height: 45vh;
+                z-index: -1;
+                object-fit: cover;
+            }
+            .imgsBlock{
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 46vh;
+                img{
+                    width: 25%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+            p{
+                height: 23vh;
+                padding: 2vw;
+                font-family: $Main-font;
+                font-weight: 300;
+                font-size: 1vw;
+                color: $Cinza;
+                line-height: 3.5vh;
+            }
+            .btn{
+                position: absolute;
+                bottom: 8vh;
+                right: 1vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 5vh;
+                width: 16vw;
+                background-color: $Creme;
+                font-family: $Main-font;
+                font-weight: 900;
+                font-size: 1.25vw;
+                color: $Branco;
+                box-shadow: 0px 5px 5px $Cinzao;
+                transition: 0.3s ease-in-out all;
+                border-radius: 0.5vw;
+                &:hover{
+                    transform: translateY(-5px);
+                    font-size: 1.35vw;
+                }
+            }
+           
+        }
         #plantas{
             display: flex;
             flex-wrap: wrap;
@@ -420,7 +497,7 @@ body {
                     h4{
                         font-family: $Main-font;
                         font-weight: 700;
-                        font-size: 8vw;
+                        font-size: 6.5vw;
                         color: $Branco;
                         position: relative;
                         display: flex;
@@ -443,7 +520,7 @@ body {
                         }
                     }
                     img{
-                        margin: 0 10vw 0 auto;
+                        margin: 2vh 10vw 0 auto;
                         width: 60vw;
                         height: auto;
                     }
@@ -454,7 +531,7 @@ body {
                         justify-content: center;
                         position: relative;
                         height: 5vh;
-                        width: 21.5vw;
+                        width: 17vw;
                         background-color: $Creme;
                         font-family: $Main-font;
                         font-weight: 900;
@@ -704,14 +781,14 @@ body {
                     position: absolute;
                     width: 10%;
                     height: 105%;
-                    left: 0;
+                    left: -1%;
                     top: -2%;
                     background: linear-gradient(90deg, $Cinza 10%, #4b4b4d00 100%);
                     z-index: 99;
                 }
                 &::after{
                     left: auto;
-                    right: 0;
+                    right: -1%;
                     transform: rotate(180deg);
                 }
             }
@@ -846,7 +923,7 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 .local{
-                    width: 33.3%;
+                    width: 25%;
                     height: 50%;
                     display: flex;
                     align-items: center;
@@ -863,22 +940,26 @@ body {
                         justify-content: center;
                         font-family: $Main-font;
                         font-weight: 700;
-                        font-size: 1.1vw;
+                        font-size: 1vw;
                         color: $Cinza;
                         margin-top: 1vh;
+                        text-align: center;
                     }
                     p{
                         width: 100%;
                         font-family: $Main-font;
                         font-weight: 300;
-                        font-size: 0.75vw;
+                        font-size: 0.7vw;
                         color: $Cinza;
                         padding: 0 2vw;
                         text-align: center;
                     }
-                    &:nth-child(4), &:nth-child(5), &:nth-child(6){
+                    &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8){
                         img{
                             margin-top: auto;
+                        }
+                        p{
+                            margin-top: 1.5vh;
                         }
                     }
                 }

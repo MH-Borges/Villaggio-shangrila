@@ -345,6 +345,82 @@ body main #condominio .block_imgCond img {
      object-fit: contain;
   border-radius: 0.5vw;
 }
+body main #Club {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body main #Club h2 {
+  width: 100%;
+  height: 6vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #4B4B4D;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #Club h2 span {
+  color: #D9B06A;
+  margin-left: 0.75vw;
+  font-weight: 700;
+}
+body main #Club #bannerClub {
+  position: absolute;
+  top: 7vh;
+  left: -6%;
+  width: 111%;
+  height: 45vh;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #Club .imgsBlock {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46vh;
+}
+body main #Club .imgsBlock img {
+  width: 25%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #Club p {
+  height: 23vh;
+  padding: 2vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  color: #4B4B4D;
+  line-height: 3.5vh;
+}
+body main #Club .btn {
+  position: absolute;
+  bottom: 8vh;
+  right: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: 16vw;
+  background-color: #D9B06A;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  box-shadow: 0px 5px 5px #0F0F0F;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main #Club .btn:hover {
+  transform: translateY(-5px);
+  font-size: 1.35vw;
+}
 body main #plantas {
   display: flex;
   flex-wrap: wrap;
@@ -465,7 +541,7 @@ body main #plantas .tab-content .espaco_planta {
 body main #plantas .tab-content .espaco_planta h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 8vw;
+  font-size: 6.5vw;
   color: #FFFFFF;
   position: relative;
   display: flex;
@@ -488,7 +564,7 @@ body main #plantas .tab-content .espaco_planta h4::before {
   border-bottom-right-radius: 10vw;
 }
 body main #plantas .tab-content .espaco_planta img {
-  margin: 0 10vw 0 auto;
+  margin: 2vh 10vw 0 auto;
   width: 60vw;
   height: auto;
 }
@@ -499,7 +575,7 @@ body main #plantas .tab-content .espaco_planta .btn {
   justify-content: center;
   position: relative;
   height: 5vh;
-  width: 21.5vw;
+  width: 17vw;
   background-color: #D9B06A;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -743,14 +819,14 @@ body main #galeria .tab-content::before, body main #galeria .tab-content::after 
   position: absolute;
   width: 10%;
   height: 105%;
-  left: 0;
+  left: -1%;
   top: -2%;
   background: linear-gradient(90deg, #4B4B4D 10%, rgba(75, 75, 77, 0) 100%);
   z-index: 99;
 }
 body main #galeria .tab-content::after {
   left: auto;
-  right: 0;
+  right: -1%;
   transform: rotate(180deg);
 }
 body main #galeria #Img_adapt_Modal .modal-dialog {
@@ -884,7 +960,7 @@ body main #localizacao .locais_block {
   flex-wrap: wrap;
 }
 body main #localizacao .locais_block .local {
-  width: 33.3%;
+  width: 25%;
   height: 50%;
   display: flex;
   align-items: center;
@@ -902,21 +978,25 @@ body main #localizacao .locais_block .local h4 {
   justify-content: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 1.1vw;
+  font-size: 1vw;
   color: #4B4B4D;
   margin-top: 1vh;
+  text-align: center;
 }
 body main #localizacao .locais_block .local p {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 0.75vw;
+  font-size: 0.7vw;
   color: #4B4B4D;
   padding: 0 2vw;
   text-align: center;
 }
-body main #localizacao .locais_block .local:nth-child(4) img, body main #localizacao .locais_block .local:nth-child(5) img, body main #localizacao .locais_block .local:nth-child(6) img {
+body main #localizacao .locais_block .local:nth-child(5) img, body main #localizacao .locais_block .local:nth-child(6) img, body main #localizacao .locais_block .local:nth-child(7) img, body main #localizacao .locais_block .local:nth-child(8) img {
   margin-top: auto;
+}
+body main #localizacao .locais_block .local:nth-child(5) p, body main #localizacao .locais_block .local:nth-child(6) p, body main #localizacao .locais_block .local:nth-child(7) p, body main #localizacao .locais_block .local:nth-child(8) p {
+  margin-top: 1.5vh;
 }
 body main #entrega {
   display: flex;

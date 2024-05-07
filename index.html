@@ -57,6 +57,8 @@
             <nav class="menu">
                 <ul>
                     <li><a class="links" href="#condominio">O condomínio</a></li>
+                    <li><a class="links" href="#Club">Club Shangrilá</a></li>
+
                     <li><a class="links" href="#plantas">Plantas</a></li>
                     <li><a class="links" href="#galeria">Galeria</a></li>
                     <li><a class="links" href="#localizacao">Localização</a></li>
@@ -68,8 +70,8 @@
             <div class="cond_block">
                 <p>Lançamento</p>
                 <img id="Villagio" src="assets/icons/Villagio.svg" onload="SVGInject(this)">
-                <h3>Entrega: DEZ/2024</h3>
-                <h4><img src="assets/icons/mapa.svg" onload="SVGInject(this)">Av. Manoel Ribas, 1396 - Mercês, Curitiba, Paraná </h4>
+                <h3>Entrega: DEZ/2026</h3>
+                <h4><img src="assets/icons/mapa.svg" onload="SVGInject(this)">Rua Cirema Becker, 2489 – Bairro Shangrila – Ponta grossa, Paraná</h4>
 
                 <ul>
                     <li>Sofisticado</li>
@@ -87,16 +89,28 @@
                 <img src="assets/condominio.webp" alt="Entrada do condominio">
             </div>
         </section>
+        <section id="Club">
+            <h2>Conheça o <span>club Shangrilá</span></h2>
+            <img id="bannerClub" src="assets/Salao_Festas/Lazer06.webp" alt="">
+            <div class="imgsBlock">
+                <img src="assets/Salao_Festas/Lazer02.webp" alt="">
+                <img src="assets/Salao_Festas/Lazer04.webp" alt="">
+                <img src="assets/Salao_Festas/Lazer03.webp" alt="">
+                <img src="assets/Salao_Festas/Lazer05.webp" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="btn links" href="#contato"> Quero conhecer mais! </a>
+        </section>
         <section id="plantas">
             <h2>Nossas opções de plantas</h2>
             <nav class="nav nav-pills">
-                <a class="nav-link active" data-bs-toggle="pill" href="#C2_Quartos">Casa com 2 quartos | 999 m²</a>
-                <a class="nav-link" data-bs-toggle="pill" href="#C3_Quartos">Casa com 3 quartos | 999 m²</a>
+                <a class="nav-link active" data-bs-toggle="pill" href="#C2_Quartos">Casa com 2 quartos | 47,84 m²</a>
+                <a class="nav-link" data-bs-toggle="pill" href="#C3_Quartos">Casa com 3 quartos | 57,63 m²</a>
             </nav>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="C2_Quartos">
                     <div class="infos_plantas">
-                        <h3>Casa com 2 quartos | 999 m²</h3>
+                        <h3>Casa com 2 quartos | 47,84 m²</h3>
                         <ul>
                             <li>Sala de Estar e Jantar</li>
                             <li>Banheiro</li>
@@ -107,15 +121,15 @@
                         </ul>
                     </div>
                     <div class="espaco_planta">
-                        <h4>999 <span>m²</span></h4>
+                        <h4>47,84<span>m²</span></h4>
                         <img src="assets/C2_Quartos.webp" alt="Planta casa 2 quartos">
 
-                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">Quero ver as fotos da casa</button>
+                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">Conheça o interior</button>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="C3_Quartos">
                     <div class="infos_plantas">
-                        <h3>Casa com 3 quartos | 999 m²</h3>
+                        <h3>Casa com 3 quartos | 57,63 m²</h3>
                         <ul>
                             <li>Cozinha</li>
                             <li>Sala de Estar e Jantar</li>
@@ -128,10 +142,11 @@
                         </ul>
                     </div>
                     <div class="espaco_planta">
-                        <h4>999 m²</h4>
+                        <h4>57,63<span>m²</span></h4>
+
                         <img src="assets/C3_Quartos.webp" alt="Planta casa 2 quartos">
 
-                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">Quero ver as fotos da casa</button>
+                        <button type="button" class="btn" id="C2_Quartos_Modal_btn" data-bs-toggle="modal" data-bs-target="#C2_Quartos_Modal">Conheça o interior</button>
                     </div>
 
                 </div>
@@ -333,44 +348,53 @@
         <section id="localizacao">
             <img class="divisor" src="assets/divisor_galeria.svg" onload="SVGInject(this)">
             <h2>Localização <span>exclusiva!</span></h2>
-            <h3>Av. Manoel Ribas, 1396 - Mercês, Curitiba, Paraná </h3>
+            <h3>Rua Cirema Becker, 2489 – Bairro Shangrila – Ponta grossa, Paraná</h3>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.503299247143!2d-49.294546888055294!3d-25.421431832460964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3fcf440b599%3A0x54b2e7c12b51ad01!2sAv.%20Manoel%20Ribas%2C%201396%20-%20Merc%C3%AAs%2C%20Curitiba%20-%20PR%2C%2080810-000!5e0!3m2!1spt-BR!2sbr!4v1714020949672!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.9573040567598!2d-50.23081251372092!3d-25.1033065939631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e811289cf4d1a3%3A0xfd69a0f83f76495d!2sR.%20Cirema%20Becker%2C%202489%20-%20Contorno%2C%20Ponta%20Grossa%20-%20PR%2C%2084060-340!5e0!3m2!1spt-BR!2sbr!4v1715033251926!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
             </div>
             <div class="locais_block">
                 <div class="local">
-                    <img src="assets/placeholder_locals.webp" alt="">
-                    <h4>Lorem Ipsum</h4>
-                    <p>XX minutos de carro, XX minutos de caminhada. XXXm de distância</p>
+                    <img src="assets/Locais/img01.webp" alt="">
+                    <h4>Centro de Ponta Grossa</h4>
+                    <p>19 minutos de carro, 7.9km de distância</p>
                 </div>
                 <div class="local">
-                    <img src="assets/placeholder_locals.webp" alt="">
-                    <h4>Lorem Ipsum</h4>
-                    <p>XX minutos de carro, XX minutos de caminhada. XXXm de distância</p>
+                    <img src="assets/Locais/img02.webp" alt="">
+                    <h4>UPA santa paula</h4>
+                    <p>8 minutos de carro 3km de distância</p>
                 </div>
                 <div class="local">
-                    <img src="assets/placeholder_locals.webp" alt="">
-                    <h4>Lorem Ipsum</h4>
-                    <p>XX minutos de carro, XX minutos de caminhada. XXXm de distância</p>
+                    <img src="assets/Locais/img03.webp" alt="">
+                    <h4>Mercado Atacadão</h4>
+                    <p>7 minutos de carro 4.5km de distância</p>
                 </div>
                 <div class="local">
-                    <img src="assets/placeholder_locals.webp" alt="">
-                    <h4>Lorem Ipsum</h4>
-                    <p>XX minutos de carro, XX minutos de caminhada. XXXm de distância</p>
+                    <img src="assets/Locais/img04.webp" alt="">
+                    <h4>Cmei Dr. Grabiel Bacila</h4>
+                    <p>3 minutos de carro 1km de distância</p>
                 </div>
                 <div class="local">
-                    <img src="assets/placeholder_locals.webp" alt="">
-                    <h4>Lorem Ipsum</h4>
-                    <p>XX minutos de carro, XX minutos de caminhada. XXXm de distância</p>
+                    <img src="assets/Locais/img05.webp" alt="">
+                    <h4>Capela Catolica <br> Ns. Sra. Aparecida</h4>
+                    <p>4 minutos de carro 1km de distância</p>
                 </div>
                 <div class="local">
-                    <img src="assets/placeholder_locals.webp" alt="">
-                    <h4>Lorem Ipsum</h4>
-                    <p>XX minutos de carro, XX minutos de caminhada. XXXm de distância</p>
+                    <img src="assets/Locais/img06.webp" alt="">
+                    <h4>Escola Prof Shirley Aggi Moura</h4>
+                    <p>3 minutos de carro 1km de distância</p>
+                </div>
+                <div class="local">
+                    <img src="assets/Locais/img07.webp" alt="">
+                    <h4>Congregação cristã no Brasil Shangrilá</h4>
+                    <p>2 minutos de carro 600m de distância</p>
+                </div>
+                <div class="local">
+                    <img src="assets/Locais/img08.webp" alt="">
+                    <h4>Pesqueiro Rancho <br> do paraiso</h4>
+                    <p>4 minutos de carro 650m de distância</p>
                 </div>
             </div>
         </section>
-
         <section id="entrega">
             <h2>Tempo para a <span>entrega!</span></h2>
 
@@ -399,64 +423,63 @@
             
             <div class="barraProgresso">
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
+                    <h4>Projeto executivo</h4>
                     <span>100%</span>
                     <div class="progress-wrap" data-progress-percent="100">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
-                    <span>100%</span>
-                    <div class="progress-wrap" data-progress-percent="100">
+                    <h4>Canteiro de obras</h4>
+                    <span>0%</span>
+                    <div class="progress-wrap" data-progress-percent="0">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
-                    <span>75%</span>
-                    <div class="progress-wrap" data-progress-percent="75">
+                    <h4>Infraestrutura geral</h4>
+                    <span>0%</span>
+                    <div class="progress-wrap" data-progress-percent="0">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
-                    <span>100%</span>
-                    <div class="progress-wrap" data-progress-percent="100">
+                    <h4>Movimentações da terra</h4>
+                    <span>0%</span>
+                    <div class="progress-wrap" data-progress-percent="0">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
-                    <span>25%</span>
-                    <div class="progress-wrap" data-progress-percent="25">
+                    <h4>Fundações</h4>
+                    <span>0%</span>
+                    <div class="progress-wrap" data-progress-percent="0">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
-                    <span>75%</span>
-                    <div class="progress-wrap" data-progress-percent="75">
+                    <h4>Estrutura</h4>
+                    <span>0%</span>
+                    <div class="progress-wrap" data-progress-percent="0">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
-                    <span>50%</span>
-                    <div class="progress-wrap" data-progress-percent="50">
+                    <h4>Instalações</h4>
+                    <span>0%</span>
+                    <div class="progress-wrap" data-progress-percent="0">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
                 <div class="progress-block">
-                    <h4>Lorem Ipsum</h4>
-                    <span>50%</span>
-                    <div class="progress-wrap" data-progress-percent="50">
+                    <h4>Revistimentos</h4>
+                    <span>0%</span>
+                    <div class="progress-wrap" data-progress-percent="0">
                         <div class="progress-bar"></div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="contato">
             <img id="Banner_contato" src="assets/contato.webp" alt="">
 
@@ -505,7 +528,6 @@
 
             <h3>Garanta a casa aonde <br> a sua família criará <br> as suas memórias!</h3>
         </section>
-
         <section id="whats">
             <h2>Quer saber mais?</h2>
             <h3>Entre em contato</h3>

@@ -20,8 +20,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
     }
 
     //relogio
-    var dateString = new Date().getFullYear() + "/12/31";
+    var dateString = "2026/12/15";
+    console.log(dateString);
     var deadline = new Date(dateString);
+    console.log(deadline);
+
     function updateClock(){
         var today = new Date();
         var diff = deadline - today;
@@ -38,7 +41,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
             var minutes = Math.floor((diff/1000/60)%60);
             var hours = Math.floor((diff/1000/60/60)%24);
             var days = Math.floor(diff/(1000*60*60*24)%30.5);
-            var months = Math.floor(diff/(1000*60*60*24*30.5)%12);
+            var months = Math.floor(diff/(1000*60*60*24*30.5));
         }
 
         document.getElementById("months").textContent = ('0' + months).slice(-2);
