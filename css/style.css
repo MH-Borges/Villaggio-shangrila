@@ -1448,6 +1448,901 @@ body footer a img {
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 /* MOBILE */
-/* Landscape */
-/* TABLET */
+@media only screen and (max-width: 479px) {
+  body main .whats_link {
+    bottom: 2vh;
+    right: 2vw;
+    width: 12vw;
+    height: 12vw;
+    padding: 2vw;
+  }
+  body main #banner .Bg_home {
+    width: 110;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main #banner::before {
+    opacity: 0;
+  }
+  body main #banner .banner_Block {
+    position: relative;
+    width: 100%;
+    align-items: center;
+  }
+  body main #banner .banner_Block #logo {
+    width: 45%;
+    margin: 7vh 0 15vh;
+  }
+  body main #banner .banner_Block h2 {
+    font-size: 7vw;
+    color: #FFFFFF;
+    margin: 6vh 0 3vh;
+    padding: 0 2vw;
+    width: 90%;
+    text-align: center;
+  }
+  body main #banner .banner_Block .btn {
+    margin-top: 25vh;
+    height: auto;
+    width: 75%;
+    font-size: 4.5vw;
+    border-radius: 1.5vw;
+    padding: 0.25vh 0;
+  }
+  body main #banner .banner_Block .btn:hover {
+    font-size: 4.5vw;
+  }
+  body main #condominio {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  body main #condominio .menu {
+    display: none;
+  }
+  body main #condominio::before {
+    top: 35%;
+    width: 112%;
+    height: 65%;
+    border-radius: 0;
+    border-bottom-left-radius: 7.5vw;
+    border-bottom-right-radius: 7.5vw;
+  }
+  body main #condominio .cond_block {
+    width: 100%;
+    height: 60%;
+    z-index: 2;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main #condominio .cond_block p {
+    margin-top: 2vh;
+    font-size: 3vw;
+    color: #FFFFFF;
+  }
+  body main #condominio .cond_block #Villagio {
+    width: 95%;
+    height: 5vh;
+    margin-top: 1vh;
+  }
+  body main #condominio .cond_block h3 {
+    font-size: 3vw;
+    margin-top: 3vh;
+  }
+  body main #condominio .cond_block h4 {
+    width: 100%;
+    font-size: 4vw;
+    justify-content: center;
+    margin-top: 1vh;
+  }
+  body main #condominio .cond_block h4 img, body main #condominio .cond_block h4 svg {
+    margin: 0 3vw 0 6vw;
+    width: 20%;
+  }
+  body main #condominio .cond_block ul {
+    height: 5vh;
+    margin: 2vh 0 0 0;
+    padding: 1vh 0;
+  }
+  body main #condominio .cond_block ul li {
+    border-left: 1px solid #4B4B4D;
+    border-right: 1px solid #4B4B4D;
+    font-size: 3.5vw;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+  body main #condominio .cond_block h5 {
+    margin-top: 3vh;
+    padding: 0 2vw;
+    font-size: 3vw;
+    color: #FFFFFF;
+    line-height: 2.5vh;
+    text-align: center;
+  }
+  body main #condominio .cond_block .btn {
+    margin-top: 3vh;
+    height: auto;
+    width: 60%;
+    padding: 0.25vh 0;
+    font-size: 4vw;
+    border-radius: 1.5vw;
+  }
+  body main #condominio .cond_block .btn:hover {
+    font-size: 4.5vw;
+  }
+  body main #condominio .block_imgCond {
+    width: 100%;
+    height: 40%;
+    order: 1;
+    padding: 5vh 2vw 2vw 2vw;
+  }
+  body main #condominio .block_imgCond img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0;
+  }
+  body main #Club h2 {
+    margin-top: 2vh;
+    font-size: 7vw;
+  }
+  body main #Club h2 span {
+    margin-left: 1.5vw;
+  }
+  body main #Club #bannerClub {
+    position: absolute;
+    top: 10vh;
+    left: -6%;
+    width: 112%;
+    height: 30vh;
+    z-index: -1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main #Club .imgsBlock {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32vh;
+  }
+  body main #Club .imgsBlock img {
+    padding: 0.5vw;
+    width: 50%;
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main #Club p {
+    width: 100%;
+    height: auto;
+    color: #4B4B4D;
+    padding: 2vh 2vw;
+    font-size: 2.75vw;
+    line-height: 3vh;
+    text-align: center;
+  }
+  body main #Club .btn {
+    bottom: 0;
+    right: 20%;
+    border-radius: 1.5vw;
+    height: auto;
+    width: 60%;
+    padding: 0.25vh 0;
+    font-size: 4vw;
+  }
+  body main #Club .btn:hover {
+    font-size: 4.5vw;
+  }
+  body main #plantas {
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  body main #plantas h2 {
+    margin-top: 5vh;
+    height: 8vh;
+    font-size: 7vw;
+    justify-content: center;
+  }
+  body main #plantas .nav-pills {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5vh 0;
+    margin: 1vh 0;
+  }
+  body main #plantas .nav-pills a {
+    align-items: center;
+    font-size: 2.5vw;
+    color: #D9B06A;
+    border-radius: 3vw;
+    padding: 0;
+    margin: 0;
+    letter-spacing: auto;
+    width: 47%;
+    height: 100%;
+    border: 1px solid;
+  }
+  body main #plantas .tab-content {
+    width: 100%;
+    height: 88%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  body main #plantas .tab-content .infos_plantas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+  }
+  body main #plantas .tab-content .infos_plantas h3 {
+    height: 25%;
+    font-size: 4.25vw;
+    letter-spacing: auto;
+    padding-left: 3vw;
+  }
+  body main #plantas .tab-content .infos_plantas ul {
+    width: 100%;
+    height: 75%;
+    margin: 0;
+  }
+  body main #plantas .tab-content .infos_plantas ul li {
+    padding-left: 0;
+    font-size: 2.75vw;
+    letter-spacing: auto;
+  }
+  body main #plantas .tab-content .infos_plantas ul li::before {
+    display: none;
+  }
+  body main #plantas .tab-content .espaco_planta {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26vh;
+  }
+  body main #plantas .tab-content .espaco_planta h4 {
+    font-size: 10vw;
+    margin: 0;
+    padding: 2vh 2vw 0 0;
+  }
+  body main #plantas .tab-content .espaco_planta h4 span {
+    margin-left: 2.5vw;
+  }
+  body main #plantas .tab-content .espaco_planta h4::before {
+    width: 55%;
+    height: 35vh;
+  }
+  body main #plantas .tab-content .espaco_planta img {
+    margin: 2vh 0 0 2.5vw;
+    width: 95%;
+    height: auto;
+  }
+  body main #plantas .tab-content .espaco_planta .btn {
+    margin: 5vh auto 0;
+    background-color: #4B4B4D;
+    width: 65%;
+    height: auto;
+    padding: 0.25vh 0;
+    font-size: 4.5vw;
+    border-radius: 1.5vw;
+  }
+  body main #plantas .tab-content .espaco_planta .btn:hover {
+    font-size: 4.5vw;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog, body main #plantas #C3_Quartos_Modal .modal-dialog {
+    width: 90vw;
+    height: 55%;
+    margin: 15% auto;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close {
+    position: absolute;
+    top: -5vh;
+    right: -3vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body p, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body p {
+    position: absolute;
+    bottom: -35vh;
+    left: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    color: #FFFFFF;
+    z-index: 99;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 {
+    width: 100%;
+    height: 100%;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators {
+    height: 0.5vh;
+    align-items: center;
+    overflow: hidden;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators button, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators button {
+    background: #FFFFFF;
+    width: 4vw;
+    height: 0.5vh;
+    margin: 0 0.75vw;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button {
+    width: 15%;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-prev-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-next-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-prev-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-next-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-prev-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-next-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-prev-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-next-icon {
+    width: 80%;
+    height: 10vh;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-prev, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-prev, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-prev, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-prev {
+    left: -1vw;
+  }
+  body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-next, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-next, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-next, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-next {
+    right: -1vw;
+  }
+  body main #galeria {
+    height: auto;
+    padding-bottom: 5vh;
+  }
+  body main #galeria .divisor {
+    width: 112%;
+  }
+  body main #galeria::before {
+    width: 112%;
+    height: 97%;
+    left: -6%;
+    top: 3.5vh;
+  }
+  body main #galeria h2 {
+    font-size: 7vw;
+    padding: 1vh 0;
+    margin-top: 4vh;
+  }
+  body main #galeria .nav-pills {
+    justify-content: center;
+    height: 6vh;
+    width: 100%;
+    margin-top: 2vh;
+    padding: 1vh 0;
+  }
+  body main #galeria .nav-pills a {
+    width: 33.3%;
+    height: 100%;
+    font-size: 2.8vw;
+    letter-spacing: auto;
+  }
+  body main #galeria .tab-content {
+    margin-top: 4vh;
+    width: 80%;
+    height: 30vh;
+  }
+  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow {
+    width: 7vw;
+    height: 8vh;
+  }
+  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow svg {
+    padding: 0;
+  }
+  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--prev {
+    left: -8vw;
+    border-radius: 5vw 2vw 2vw 5vw;
+  }
+  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--next {
+    right: -8vw;
+    border-radius: 2vw 5vw 5vw 2vw;
+  }
+  body main #galeria #Img_adapt_Modal .modal-dialog {
+    width: 90vw;
+    height: 55%;
+    margin: 15% auto;
+  }
+  body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-close {
+    position: absolute;
+    top: -5vh;
+    right: -3vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  body main #galeria #Img_adapt_Modal .modal-dialog .modal-content .modal-body p {
+    position: absolute;
+    bottom: -35vh;
+    left: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    color: #FFFFFF;
+    z-index: 99;
+  }
+  body main #localizacao {
+    padding-top: 5vh;
+    height: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-bottom: 5vh;
+  }
+  body main #localizacao .divisor {
+    width: 112%;
+  }
+  body main #localizacao h2 {
+    height: 6vh;
+    font-size: 7vw;
+  }
+  body main #localizacao h2 span {
+    margin-left: 1.5vw;
+  }
+  body main #localizacao h3 {
+    height: auto;
+    padding: 0 15vw;
+    font-size: 3vw;
+    margin-top: 2vh;
+  }
+  body main #localizacao .map {
+    margin-top: 5vh;
+    height: 28vh;
+    width: 100%;
+    position: relative;
+  }
+  body main #localizacao .map iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid #D9B06A 5px;
+  }
+  body main #localizacao .map::before {
+    display: none;
+  }
+  body main #localizacao .locais_block {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+  }
+  body main #localizacao .locais_block .local {
+    margin: 1.5vh 0;
+    width: 50%;
+    height: 29vh;
+    justify-content: center;
+  }
+  body main #localizacao .locais_block .local img {
+    height: auto;
+    width: 75%;
+  }
+  body main #localizacao .locais_block .local h4 {
+    height: auto;
+    font-size: 4vw;
+    margin-top: 1vh;
+  }
+  body main #localizacao .locais_block .local p {
+    width: 100%;
+    height: auto;
+    font-size: 3vw;
+    padding: 0 2vw;
+    margin-top: 1.5vh;
+  }
+  body main #localizacao .locais_block .local:nth-child(5) img, body main #localizacao .locais_block .local:nth-child(6) img, body main #localizacao .locais_block .local:nth-child(7) img, body main #localizacao .locais_block .local:nth-child(8) img {
+    margin-top: unset;
+  }
+  body main #localizacao .locais_block .local:nth-child(5) p, body main #localizacao .locais_block .local:nth-child(6) p, body main #localizacao .locais_block .local:nth-child(7) p, body main #localizacao .locais_block .local:nth-child(8) p {
+    margin-top: 1.5vh;
+  }
+  body main #localizacao .locais_block .local:nth-child(1), body main #localizacao .locais_block .local:nth-child(2) {
+    margin-top: unset;
+  }
+  body main #localizacao .locais_block .local:nth-child(7), body main #localizacao .locais_block .local:nth-child(8) {
+    margin-bottom: unset;
+  }
+  body main #entrega {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  body main #entrega h2 {
+    margin-top: 2vh;
+    height: 6vh;
+    font-size: 7vw;
+  }
+  body main #entrega h2 span {
+    margin-left: 1.5vw;
+  }
+  body main #entrega .Relogio {
+    width: 100%;
+    height: 10vh;
+    margin-top: 1vh;
+  }
+  body main #entrega .Relogio .clock_Num {
+    width: 20%;
+    margin: 0;
+  }
+  body main #entrega .Relogio .clock_Num span {
+    font-size: 9vw;
+    color: #D9B06A;
+  }
+  body main #entrega .Relogio .clock_Num p {
+    font-size: 3vw;
+  }
+  body main #entrega .barraProgresso {
+    width: 100%;
+    height: auto;
+    margin-top: 4vh;
+  }
+  body main #entrega .barraProgresso .progress-block {
+    width: 100%;
+    height: 10vh;
+    margin-top: 0;
+  }
+  body main #entrega .barraProgresso .progress-block h4, body main #entrega .barraProgresso .progress-block span {
+    font-size: 3vw;
+  }
+  body main #entrega .barraProgresso .progress-block span {
+    justify-content: right;
+  }
+  body main #entrega .barraProgresso .progress-block .progress-wrap {
+    border-radius: 2vw;
+  }
+  body main #entrega .barraProgresso .progress-block:nth-child(1), body main #entrega .barraProgresso .progress-block:nth-child(2) {
+    margin-top: unset;
+  }
+  body main #contato {
+    height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  body main #contato #Banner_contato {
+    position: absolute;
+    width: 111%;
+    height: 70%;
+    top: 15%;
+    left: -6%;
+    z-index: -1;
+  }
+  body main #contato .form_block {
+    width: 42%;
+    height: 72%;
+    margin-top: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9B06A;
+    border-radius: 1.5vw;
+    border-bottom-left-radius: 10vw;
+    padding: 1vh 2vw;
+    position: relative;
+  }
+  body main #contato .form_block h2 {
+    width: 100%;
+    height: 15%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #contato .form_block form {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  body main #contato .form_block form .BlockBox {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #contato .form_block form .BlockBox input {
+    width: 90% !important;
+    height: 50%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 2vh 0.5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1vw;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+  }
+  body main #contato .form_block form .BlockBox p, body main #contato .form_block form .BlockBox span {
+    position: absolute;
+    left: 2vw;
+    top: 1.75vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    color: #FFFFFF;
+    transition: 0.5s;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+  }
+  body main #contato .form_block form .BlockBox:nth-child(1) span {
+    left: 9.3vw;
+    color: #4B4B4D;
+    font-weight: 900;
+  }
+  body main #contato .form_block form .BlockBox:nth-child(2) span {
+    left: 5vw;
+    color: #4B4B4D;
+    font-weight: 900;
+  }
+  body main #contato .form_block form .BlockBox input:focus ~ p, body main #contato .form_block form .BlockBox input:focus ~ span {
+    transform: translate(-0.5vw, -2.5vh);
+    font-size: 1vw;
+  }
+  body main #contato .form_block form .seletor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  body main #contato .form_block form .seletor #select {
+    position: relative;
+    width: 90% !important;
+    height: 50%;
+    border-bottom: 3px solid #FFFFFF;
+  }
+  body main #contato .form_block form .seletor #select #options_btn {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    z-index: 5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1vw;
+    color: #FFFFFF;
+  }
+  body main #contato .form_block form .seletor #select #select-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    outline: none;
+  }
+  body main #contato .form_block form .seletor #select #select-button #selected_val {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1vw;
+    color: #FFFFFF;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0.75vw;
+    padding-top: 0.25vh;
+  }
+  body main #contato .form_block form .seletor #select #select-button img, body main #contato .form_block form .seletor #select #select-button svg {
+    z-index: 99;
+    position: absolute;
+    right: 0.5vw;
+    width: 1.25vw;
+    height: 100%;
+  }
+  body main #contato .form_block form .seletor #select #select-button img path, body main #contato .form_block form .seletor #select #select-button svg path {
+    fill: #FFFFFF;
+  }
+  body main #contato .form_block form .seletor #options {
+    z-index: 999;
+    width: 90%;
+    height: auto;
+    max-height: 40vh;
+    top: 6.75vh;
+    background: #0F0F0F;
+    display: none;
+    position: absolute;
+    padding: 1vh 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+  body main #contato .form_block form .seletor #options .option {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    border-bottom: 1px solid #F2F2F2;
+  }
+  body main #contato .form_block form .seletor #options .option span {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 0.75vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1vw;
+    color: #D9B06A;
+    z-index: 5;
+  }
+  body main #contato .form_block form .seletor #options .option input[type=radio] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+  }
+  body main #contato .form_block form .seletor #options .option:hover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #4B4B4D;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  body main #contato .form_block form .seletor #options .option:last-child {
+    border: none;
+  }
+  body main #contato .form_block form .seletor #options_btn:checked + #select-button svg {
+    transform: rotate(180deg);
+  }
+  body main #contato .form_block form .seletor #select:has(#options_btn:checked) + #options {
+    display: block;
+  }
+  body main #contato .form_block form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5vh;
+    width: 14vw;
+    margin-left: auto;
+    margin-top: 3vh;
+    background-color: #4B4B4D;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1.1vw;
+    color: #FFFFFF;
+    box-shadow: 0px 5px 5px #0F0F0F;
+    transition: 0.3s ease-in-out all;
+    border-radius: 0.5vw;
+  }
+  body main #contato .form_block form .btn:hover {
+    transform: translateY(-5px);
+    font-size: 1.25vw;
+  }
+  body main #contato .form_block #msg_form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    text-align: center;
+  }
+  body main #contato h3 {
+    margin-left: auto;
+    width: 40%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 3.5vw;
+    text-align: right;
+    color: #FFFFFF;
+  }
+  body main #whats {
+    height: 50vh;
+    padding-bottom: 7vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main #whats::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6%;
+    width: 111%;
+    height: 100%;
+    background-color: #4B4B4D;
+    z-index: -1;
+  }
+  body main #whats h2, body main #whats h3 {
+    width: 100%;
+    height: 8vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 3.25vw;
+    color: #D9B06A;
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #whats h3 {
+    height: auto;
+    font-size: 2vw;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding: 1vh 0;
+    margin-top: 1.5vh;
+  }
+  body main #whats .btn {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5vh;
+    width: 17vw;
+    background-color: #D9B06A;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1.1vw;
+    color: #FFFFFF;
+    box-shadow: 0px 5px 5px #0F0F0F;
+    transition: 0.3s ease-in-out all;
+    border-radius: 0.5vw;
+  }
+  body main #whats .btn:hover {
+    transform: translateY(-5px);
+    font-size: 1.25vw;
+  }
+  body footer {
+    bottom: 0;
+    left: 5%;
+    position: absolute;
+    width: 90%;
+    height: 7vh;
+    border-top: 5px solid #D9B06A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 0.9vw;
+    color: #FFFFFF;
+  }
+  body footer a {
+    width: 7.5vw;
+    height: 65%;
+  }
+  body footer a img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 /* Landscape *//*# sourceMappingURL=style.css.map */

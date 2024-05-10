@@ -1424,13 +1424,900 @@ body {
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 /* MOBILE */
 @media only screen and (max-width: 479px){
+    body {
+        main{
+            .whats_link{
+                bottom: 2vh;
+                right: 2vw;
+                width: 12vw;
+                height: 12vw;
+                padding: 2vw;
+            }
+            #banner{
+                .Bg_home{ width: 110; object-fit: cover; }
+                &::before{ opacity: 0; }
+                .banner_Block{
+                    position: relative;
+                    width: 100%;
+                    align-items: center;
+                    #logo{
+                        width: 45%;
+                        margin: 7vh 0 15vh;
+                    }
+                    h2{
+                        font-size: 7vw;
+                        color: $Branco;
+                        margin: 6vh 0 3vh;
+                        padding: 0 2vw;
+                        width: 90%;
+                        text-align: center;
+                    }
+                    .btn{
+                        margin-top: 25vh;
+                        height: auto;
+                        width: 75%;
+                        font-size: 4.5vw;
+                        border-radius: 1.5vw;
+                        padding: 0.25vh 0;
+                        &:hover{
+                            font-size: 4.5vw;
+                        }
+                    }
+                }
+            }
+            #condominio{
+                padding-top: 0;
+                flex-direction: column;
+                .menu{display: none;}
+                &::before{
+                    top: 35%;
+                    width: 112%;
+                    height: 65%;
+                    border-radius: 0;
+                    border-bottom-left-radius: 7.5vw;
+                    border-bottom-right-radius: 7.5vw;
+                }
+                .cond_block{
+                    width: 100%;
+                    height: 60%;
+                    z-index: 2;
+                    order: 2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p{
+                        margin-top: 2vh;
+                        font-size: 3vw;
+                        color: $Branco;
+                    }
+                    #Villagio{
+                        width: 95%;
+                        height: 5vh;
+                        margin-top: 1vh;
+                    }
+                    h3{
+                        font-size: 3vw;
+                        margin-top: 3vh;
+                    }
+                    h4{
+                        width: 100%;
+                        font-size: 4vw;
+                        justify-content: center;
+                        margin-top: 1vh;
+                        img, svg{ 
+                            margin: 0 3vw 0 6vw;
+                            width: 20%; 
+                        }
+                    }
+                    ul{
+                        height: 5vh;
+                        margin: 2vh 0 0 0;
+                        padding: 1vh 0;
+                        li{
+                            border-left: 1px solid $Cinza;
+                            border-right: 1px solid $Cinza;
+                            font-size: 3.5vw;
+                            color: $Branco;
+                            letter-spacing: 0;
+                        }
+                    }
+                    h5{
+                        margin-top: 3vh;
+                        padding: 0 2vw;
+                        font-size: 3vw;
+                        color: $Branco;
+                        line-height: 2.5vh;
+                        text-align: center;
+                    }
+                    .btn{
+                        margin-top: 3vh;
+                        height: auto;
+                        width: 60%;
+                        padding: 0.25vh 0;
+                        font-size: 4vw;
+                        border-radius: 1.5vw;
+                        &:hover{
+                            font-size: 4.5vw;
+                        }
+                    }
+                }
+                .block_imgCond{
+                    width: 100%;
+                    height: 40%;
+                    order: 1;
+                    padding: 5vh 2vw 2vw 2vw;
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 0;
+                    }
+                }
+            }
+            #Club{
+                h2{
+                    margin-top: 2vh;
+                    font-size: 7vw;
+                    span{ margin-left: 1.5vw; }
+                }
+                #bannerClub{
+                    position: absolute;
+                    top: 10vh;
+                    left: -6%;
+                    width: 112%;
+                    height: 30vh;
+                    z-index: -1;
+                    object-fit: cover;
+                }
+                .imgsBlock{
+                    width: 100%;
+                    height: 30vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 32vh;
+                    img{
+                        padding: 0.5vw;
+                        width: 50%;
+                        height: 50%;
+                        object-fit: cover;
+                    }
+                }
+                p{
+                    width: 100%;
+                    height: auto;
+                    color: $Cinza;
+                    padding: 2vh 2vw;
+                    font-size: 2.75vw;
+                    line-height: 3vh;
+                    text-align: center;
+                }
+                .btn{
+                    bottom: 0;
+                    right: 20%;
+                    border-radius: 1.5vw;
+                    height: auto;
+                    width: 60%;
+                    padding: 0.25vh 0;
+                    font-size: 4vw;
+                    &:hover{
+                        font-size: 4.5vw;
+                    }
+                }
+            }
+            #plantas{
+                height: auto;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                h2{
+                    margin-top: 5vh;
+                    height: 8vh;
+                    font-size: 7vw;
+                    justify-content: center;
+                }
+                .nav-pills{
+                    width: 100%;
+                    height: 6vh;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding: 1.5vh 0;
+                    margin: 1vh 0;
+                    a{
+                        align-items: center;
+                        font-size: 2.5vw;
+                        color: $Creme;
+                        border-radius: 3vw;
+                        padding: 0;
+                        margin: 0;
+                        letter-spacing: auto;
+                        width: 47%;
+                        height: 100%;
+                        border: 1px solid;
+                    }
+                }
+                .tab-content{
+                    width: 100%;
+                    height: 88%;
+                    position: relative;
+                    padding: 0;
+                    margin: 0;
+                    .infos_plantas{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 25vh;
+                        display: flex;
+                        flex-direction: column;
+                        h3{
+                            height: 25%;
+                            font-size: 4.25vw;
+                            letter-spacing: auto;
+                            padding-left: 3vw;
+                        }
+                        ul{
+                            width: 100%;
+                            height: 75%;
+                            margin: 0;
+                            li{
+                                padding-left: 0;
+                                font-size: 2.75vw;
+                                letter-spacing: auto;
+                                &::before{display: none;}
+                            }
+                        }
+                    }
+                    .espaco_planta{
+                        width: 100%;
+                        height: 35vh;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 26vh;
+                        h4{
+                            font-size: 10vw;
+                            margin: 0;
+                            padding: 2vh 2vw 0 0;
+                            span{ margin-left: 2.5vw; }
+                            &::before{
+                                width: 55%;
+                                height: 35vh;
+                            }
+                        }
+                        img{
+                            margin: 2vh 0 0 2.5vw;
+                            width: 95%;
+                            height: auto;
+                        }
+                        .btn{
+                            margin: 5vh auto 0;
+                            background-color: $Cinza;
+                            width: 65%;
+                            height: auto;
+                            padding: 0.25vh 0;
+                            font-size: 4.5vw;
+                            border-radius: 1.5vw;
+                            &:hover{ font-size: 4.5vw; }
+                        }
+                    }
+                }
+                #C2_Quartos_Modal, #C3_Quartos_Modal{
+                    .modal-dialog{
+                        width: 90vw;
+                        height: 55%;
+                        margin: 15% auto;
+                        .modal-content{
+                            .modal-close{
+                                position: absolute;
+                                top: -5vh;
+                                right: -3vw;
+                                width: 10vw;
+                                height: 10vw;
+                            }
+                            .modal-body{
+                                width: 100%;
+                                height: 100%;
+                                padding: 0;
+                                position: relative;
+                                p{
+                                    position: absolute;
+                                    bottom: -35vh;
+                                    left: 0;
+                                    font-family: $Main-font;
+                                    font-weight: 700;
+                                    font-size: 5vw;
+                                    color: $Branco;
+                                    z-index: 99;
+                                }
+                                #IndicatorsC2, #IndicatorsC3{
+                                    width: 100%;
+                                    height: 100%;
+                                    .carousel-indicators{
+                                        height: 0.5vh;
+                                        align-items: center;
+                                        overflow: hidden;
+                                        button{
+                                            background: $Branco;
+                                            width: 4vw;
+                                            height: 0.5vh;
+                                            margin: 0 0.75vw;
+                                        }
+                                    }
+                                    button{
+                                        width: 15%;
+                                        .carousel-control-prev-icon, .carousel-control-next-icon{
+                                            width: 80%;
+                                            height: 10vh;
+                                        }
+                                    }
+                                    .carousel-control-prev {
+                                        left: -1vw;
+                                    }
+                                    .carousel-control-next {
+                                        right: -1vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #galeria{
+                height: auto;
+                padding-bottom: 5vh;
+                .divisor{
+                    width: 112%;
+                }
+                &::before{
+                    width: 112%;
+                    height: 97%;
+                    left: -6%;
+                    top: 3.5vh;
+                }
+                h2{
+                    font-size: 7vw;
+                    padding: 1vh 0;
+                    margin-top: 4vh;
+                }
+                .nav-pills{
+                    justify-content: center;
+                    height: 6vh;
+                    width: 100%;
+                    margin-top: 2vh;
+                    padding: 1vh 0;
+                    a{
+                        width: 33.3%;
+                        height: 100%;
+                        font-size: 2.8vw;
+                        letter-spacing: auto;
+                    }   
+                }
+                .tab-content{
+                    margin-top: 4vh;
+                    width: 80%;
+                    height: 30vh;
+                    .tab-pane{
+                        .splide{
+                            .splide__arrows {
+                                .splide__arrow {
+                                    width: 7vw;
+                                    height: 8vh;
+                                    svg{
+                                        padding: 0;
+                                    }
+                                }
+                                .splide__arrow--prev{
+                                    left: -8vw;
+                                    border-radius: 5vw 2vw 2vw 5vw;
+                                }
+                                .splide__arrow--next{
+                                    right: -8vw;
+                                    border-radius: 2vw 5vw 5vw 2vw;
+    
+                                }
+                            }
+                        }
+                    }
+                }
+                #Img_adapt_Modal{
+                    .modal-dialog{
+                        width: 90vw;
+                        height: 55%;
+                        margin: 15% auto;
+                        .modal-content{
+                            .modal-close{
+                                position: absolute;
+                                top: -5vh;
+                                right: -3vw;
+                                width: 10vw;
+                                height: 10vw;
+                            }
+                            .modal-body{
+                                p{
+                                    position: absolute;
+                                    bottom: -35vh;
+                                    left: 0;
+                                    font-family: $Main-font;
+                                    font-weight: 700;
+                                    font-size: 5vw;
+                                    color: $Branco;
+                                    z-index: 99;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #localizacao{
+                padding-top: 5vh;
+                height: auto;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                padding-bottom: 5vh;
+                .divisor{ width: 112%; }
+                h2{
+                    height: 6vh;
+                    font-size: 7vw;
+                    span{ margin-left: 1.5vw; }
+                }
+                h3{
+                    height: auto;
+                    padding: 0 15vw;
+                    font-size: 3vw;
+                    margin-top: 2vh;
+                }
+                .map{
+                    margin-top: 5vh;
+                    height: 28vh;
+                    width: 100%;
+                    position: relative;
+                    iframe{
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: solid $Creme 5px;
+                    }
+                    &::before{ display: none; }
+                }
+                .locais_block{
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 5vh;
+                    .local{
+                        margin: 1.5vh 0;
+                        width: 50%;
+                        height: 29vh;
+                        
+                        justify-content: center;
+                        img{
+                            height: auto;
+                            width: 75%;
+                        }
+                        h4{
+                            height: auto;
+                            font-size: 4vw;
+                            margin-top: 1vh;
+                        }
+                        p{
+                            width: 100%;
+                            height: auto;
+                            font-size: 3vw;
+                            padding: 0 2vw;
+                            margin-top: 1.5vh;
+                        }
+                        &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8){
+                            img{ margin-top: unset; }
+                            p{ margin-top: 1.5vh; }
+                        }
+                        &:nth-child(1), &:nth-child(2){
+                            margin-top: unset;
+                        }
+                        &:nth-child(7), &:nth-child(8){
+                            margin-bottom: unset;
+                        }
+                    }
+                }
+            }
+            #entrega{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                h2{
+                    margin-top: 2vh;
+                    height: 6vh;
+                    font-size: 7vw;
+                    span{
+                        margin-left: 1.5vw;
+                    }
+                }
+                .Relogio{
+                    width: 100%;
+                    height: 10vh;
+                    margin-top: 1vh;
+                    .clock_Num{
+                        width: 20%;
+                        margin: 0;
+                        span{
+                            font-size: 9vw;
+                            color: $Creme;
+                        }
+                        p{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+                .barraProgresso{
+                    width: 100%;
+                    height: auto;
+                    margin-top: 4vh;
+                    .progress-block{
+                        width: 100%;
+                        height: 10vh;
+                        margin-top: 0;
+                        h4, span{ font-size: 3vw; }
+                        span{ justify-content: right; }
+                        .progress-wrap { border-radius: 2vw; }
+                        &:nth-child(1), &:nth-child(2){ margin-top: unset; }
+                    }
+                }
+            }
+
+            #contato{
+                height: 75vh;
+                position: relative;
+                display: flex;
+                align-items: center;
+                #Banner_contato{
+                    position: absolute;
+                    width: 111%;
+                    height: 70%;
+                    top: 15%;
+                    left: -6%;
+                    z-index: -1;
+                }
+                .form_block{
+                    width: 42%;
+                    height: 72%;
+                    margin-top: auto;
+                    margin-bottom: 5vh;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $Creme;
+                    border-radius: 1.5vw;
+                    border-bottom-left-radius: 10vw;
+                    padding: 1vh 2vw;
+                    position: relative;
+                    h2{
+                        width: 100%;
+                        height: 15%;
+                        font-family: $Main-font;
+                        font-weight: 900;
+                        font-size: 1.5vw;
+                        color: $Branco;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    form{
+                        width: 100%;
+                        height: 85%;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        .BlockBox{
+                            width: 100%;
+                            height: 20%;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            input{
+                                width: 90% !important;
+                                height: 50%;
+                                border: none;
+                                background: none;
+                                outline: none;
+                                padding: 2vh 0.5vw;
+                                font-family: $Main-font;
+                                font-weight: 800;
+                                font-size: 1vw;
+                                color: $Branco;
+                                border-bottom: 3px solid $Branco;
+                            }
+                            p, span{
+                                position: absolute;
+                                left: 2vw;
+                                top: 1.75vw;
+                                font-family: $Main-font;
+                                font-weight: 700;
+                                font-size: 1vw;
+                                color: $Branco;
+                                transition: 0.5s;
+                                pointer-events: none;
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            &:nth-child(1){
+                                span{
+                                    left: 9.3vw;
+                                    color: $Cinza;
+                                    font-weight: 900;
+                                }
+                            }
+                            &:nth-child(2){
+                                span{
+                                    left: 5vw;
+                                    color: $Cinza;
+                                    font-weight: 900;
+                                }
+                            }
+                        }
+                        .BlockBox input:focus ~ p, .BlockBox input:focus ~ span{
+                            transform:translate(-0.5vw, -2.5vh);
+                            font-size: 1vw;
+                        }
+                        .seletor{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            #select{
+                                position: relative;
+                                width: 90% !important;
+                                height: 50%;
+                                border-bottom: 3px solid $Branco;
+                                #options_btn {
+                                    all: unset;
+                                    position: absolute;
+                                    inset: 0;
+                                    cursor: pointer;
+                                    z-index:5;
+                                    font-family: $Main-font;
+                                    font-weight: 800;
+                                    font-size: 1vw;
+                                    color: $Branco;
+                                }
+                                #select-button {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    position: relative;
+                                    outline: none;
+                                    #selected_val{
+                                        font-family: $Main-font;
+                                        font-weight: 800;
+                                        font-size: 1vw;
+                                        color: $Branco;
+                                        width: 80%;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        white-space: nowrap;                  
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        padding: 0 0.75vw;
+                                        padding-top: 0.25vh;
+                                    }
+                                    img, svg{
+                                        z-index: 99;
+                                        position: absolute;
+                                        right: 0.5vw;
+                                        width: 1.25vw;
+                                        height: 100%;
+                                        path{
+                                            fill: $Branco;
+                                        }
+                                    }
+                                }
+                            }
+                            #options {
+                                z-index: 999;
+                                width: 90%;
+                                height: auto;
+                                max-height: 40vh;
+                                top: 6.75vh;
+                                background: $Cinzao;
+                                display: none;
+                                position: absolute;
+                                padding: 1vh 1vw;
+                                border-bottom-left-radius: 1vw;
+                                border-bottom-right-radius: 1vw;
+                                .option {
+                                    display: flex;
+                                    align-items: center;
+                                    position: relative;
+                                    width: 100%;
+                                    height: 5vh;
+                                    border-bottom: 1px solid $Cinzinha;
+                                    span{
+                                        all: unset;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        white-space: nowrap;                  
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        padding-left: 0.75vw;
+                                        font-family: $Main-font;
+                                        font-weight: 800;
+                                        font-size: 1vw;
+                                        color: $Creme;
+                                        z-index: 5;
+                                    }
+                                    input[type="radio"]{
+                                        all: unset;
+                                        position: absolute;
+                                        inset: 0;
+                                        z-index: 10;
+                                    }
+                                    &:hover{
+                                        &::before{
+                                            content: '';
+                                            position: absolute;
+                                            inset: 0;
+                                            background: $Cinza;
+                                            opacity: 0.5;
+                                            z-index: -1;
+                                        }
+                                    }
+                                    &:last-child{
+                                        border: none;
+                                    }
+                                }
+                            }
+                            #options_btn:checked + #select-button svg{
+                                transform: rotate(180deg);
+                            }
+                            #select:has(#options_btn:checked) + #options {
+                                display: block;
+                            }
+                        }
+                        .btn{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            height: 5vh;
+                            width: 14vw;
+                            margin-left: auto;
+                            margin-top: 3vh;
+                            background-color: $Cinza;
+                            font-family: $Main-font;
+                            font-weight: 900;
+                            font-size: 1.1vw;
+                            color: $Branco;
+                            box-shadow: 0px 5px 5px $Cinzao;
+                            transition: 0.3s ease-in-out all;
+                            border-radius: 0.5vw;
+                            &:hover{
+                                transform: translateY(-5px);
+                                font-size: 1.25vw;
+                            }
+                        }
+                    }
+                    #msg_form{
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 5vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $Main-font;
+                        font-weight: 700;
+                        font-size: 1vw;
+                        text-align: center;
+                    }
+                }
+                h3{
+                    margin-left: auto;
+                    width: 40%;
+                    height: auto;
+                    font-family: $Main-font;
+                    font-weight: 700;
+                    font-size: 3.5vw;
+                    text-align: right;
+                    color: $Branco;
+                }
+            }
+            
+            #whats{
+                height: 50vh;
+                padding-bottom: 7vh;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -6%;
+                    width: 111%;
+                    height: 100%;
+                    background-color: $Cinza;
+                    z-index: -1;
+                }
+                h2, h3{
+                    width: 100%;
+                    height: 8vh;
+                    font-family: $Main-font;
+                    font-weight: 800;
+                    font-size: 3.25vw;
+                    color: $Creme;
+                    margin-top: 6vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                h3{
+                    height: auto;
+                    font-size: 2vw;
+                    color: $Branco;
+                    font-weight: 300;
+                    padding: 1vh 0;
+                    margin-top: 1.5vh;
+                }
+                .btn{
+                    margin-top: 10vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    height: 5vh;
+                    width: 17vw;
+                    background-color: $Creme;
+                    font-family: $Main-font;
+                    font-weight: 900;
+                    font-size: 1.1vw;
+                    color: $Branco;
+                    box-shadow: 0px 5px 5px $Cinzao;
+                    transition: 0.3s ease-in-out all;
+                    border-radius: 0.5vw;
+                    &:hover{
+                        transform: translateY(-5px);
+                        font-size: 1.25vw;
+                    }
+                }
+            }
+        }
+        footer{
+            bottom: 0;
+            left: 5%;
+            position: absolute;
+            width: 90%;
+            height: 7vh;
+            border-top: 5px solid $Creme;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-family: $Main-font;
+                font-weight: 800;
+                font-size: 0.9vw;
+                color: $Branco;
+            }
+            a{
+                width: 7.5vw;
+                height: 65%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
 /* Landscape */ 
 @media only screen and (min-width: 480px) and (max-width: 767px){	
-}
-/* TABLET */
-@media only screen and (min-width: 768px) and (max-width: 833px) {
-}
-/* Landscape */ 
-@media only screen and (min-width: 834px) and (max-width: 1024px) {
 }

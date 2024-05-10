@@ -1,4 +1,6 @@
 document.addEventListener( 'DOMContentLoaded', function() {
+    moveProgressBar();
+
     document.getElementById("data_footer").textContent = new Date().getFullYear();
 
     //galeria
@@ -62,9 +64,6 @@ window.addEventListener('scroll', function() {
     //menu fixo
     if(window.pageYOffset > 950){ document.querySelector(".menu").classList.add('fixed'); }
     else{ document.querySelector(".menu").classList.remove('fixed'); }
-
-    //barra entregas
-    if(window.pageYOffset > 4200){ moveProgressBar(); }
 });
 
 //Scroll Menu
