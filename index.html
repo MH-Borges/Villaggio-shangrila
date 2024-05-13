@@ -486,15 +486,15 @@
                 <h2>Entre em contato</h2>
                 <form id="formulario" method="POST">
                     <div class="BlockBox">
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" required>
                         <p>Nome completo</p><span>*</span>
                     </div>
                     <div class="BlockBox">
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" required>
                         <p>E-mail</p><span>*</span>
                     </div>
                     <div class="BlockBox">
-                        <input type="text" name="telefone" id="telefone">
+                        <input type="text" name="telefone" id="telefone" required>
                         <p>Telefone de contato</p>
                     </div>
                     
@@ -520,7 +520,7 @@
                         </ul>
                     </div>
 
-                    <button class="btn" type="submit">Quero entrar na lista!</button>
+                    <button id="btn_form" class="btn" type="submit">Quero entrar na lista!</button>
                 </form>
                 <div id="msg_form"></div> 
             </div>

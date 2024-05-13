@@ -138,8 +138,15 @@ function OptionSelection(selectedValueId, optionsButtonId, optionInputsClass) {
 $(document).ready(function () {
     $('#telefone').mask('(00) 00000 - 0000');
 
+    $('#btn_form').click(function (e) {
+        $('#nome').prop('required',false);
+        $('#email').prop('required',false);
+        $('#telefone').prop('required',false);
+    });
+
     $('#formulario').submit(function (e) {
         e.preventDefault();
+        $('#msg_form').text('');
         $('#msg_form').removeClass('text-danger');
         $('#msg_form').removeClass('text-success');
         $.ajax({
@@ -147,52 +154,22 @@ $(document).ready(function () {
             method: "post",
             data: $('form').serialize(),
             dataType: "text",
-            success: function (Alert) {
-                if (Alert.trim() === 'Email enviado com sucesso!') {
+            success: function (msg) {
+                if (msg.trim() === 'Formulario enviado com sucesso! Entraremos em contato em breve, obrigado por nos escolher!') {
                     $('#msg_form').addClass('text-success');
-                    $('#msg_form').text(Alert);
+                    $('#msg_form').text(msg);
                     setTimeout(() => { window.location.reload(); }, 5000)
                 }
-                else if (Alert.trim() == 'Preencha o Campo de Nome') {
+                else if (msg.trim() == "Preencha o campo de 'Nome completo'" || msg.trim() == 'Preencha o campo de E-mail' || msg.trim() == 'Por favor selecione uma planta') {
                     $('#msg_form').addClass('text-danger');
-                    $('#msg_form').text(Alert);
+                    $('#msg_form').text(msg);
                 }
-                else if (Alert.trim() == 'Preencha o Campo do Email') {
-                    $('#msg_form').addClass('text-danger');
-                    $('#msg_form').text(Alert);
-                }
-                else {
+                else{
+                    $('#msg_form').removeClass('text-success');
                     $('#msg_form').addClass('text-danger');
                     $('#msg_form').text('Erro ao enviar o formulario, provaveis problemas com o servidor, você pode tentar nos mandar mensagem via Instagram ou Whatsapp');
                 }
             }
         })
     });
-});
-
-$('#formulario').submit(function (e) {
-    e.preventDefault();
-    $('#msg_form').removeClass('text-danger');
-    $('#msg_form').removeClass('text-success');
-    $.ajax({
-        url: "Produtos/subCategoria/insert_Edit.php",
-        method: "post",
-        data: $('form').serialize(),
-        dataType: "text",
-        success: function (msg) {
-            if (msg.trim() === "Subcategoria adicionada com Sucesso!!" || msg.trim() === "Subcategoria Atualizada com Sucesso!!") {
-                $('#msgErro_InsertEdit_Subcateg').removeClass('text-warning');
-                $('#msgErro_InsertEdit_Subcateg').removeClass('text-danger');
-                $('#msgErro_InsertEdit_Subcateg').addClass('text-success');
-                $('#msgErro_InsertEdit_Subcateg').text(msg);
-                setTimeout(() => { window.location='./index.php?pag=categoriasProduto'; }, 500);
-            }
-            else{
-                $('#msgErro_InsertEdit_Subcateg').removeClass('text-success');
-                $('#msgErro_InsertEdit_Subcateg').removeClass('text-warning');
-                $('#msgErro_InsertEdit_Subcateg').addClass('text-danger');
-                $('#msgErro_InsertEdit_Subcateg').text(msg)
-            }
-        }
-    })
 });

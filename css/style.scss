@@ -1160,7 +1160,7 @@ body {
                             }
                         }
                     }
-                    .BlockBox input:focus ~ p, .BlockBox input:focus ~ span{
+                    .BlockBox input:focus ~ p, input:valid ~ p, input:focus ~ span, input:valid ~ span{
                         transform:translate(-0.5vw, -2.5vh);
                         font-size: 1vw;
                     }
@@ -1418,7 +1418,6 @@ body {
             }
         }
     }
-    
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
@@ -1429,9 +1428,9 @@ body {
             .whats_link{
                 bottom: 2vh;
                 right: 2vw;
-                width: 12vw;
-                height: 12vw;
-                padding: 2vw;
+                width: 14vw;
+                height: 14vw;
+                padding: 3vw;
             }
             #banner{
                 .Bg_home{ width: 110; object-fit: cover; }
@@ -1966,241 +1965,87 @@ body {
                     }
                 }
             }
-
             #contato{
-                height: 75vh;
-                position: relative;
-                display: flex;
-                align-items: center;
+                min-height: 75vh;
+                height: auto;
+                flex-direction: column;
+                padding-bottom: 5vh;
                 #Banner_contato{
-                    position: absolute;
-                    width: 111%;
-                    height: 70%;
-                    top: 15%;
+                    width: 140%;
+                    height: 85%;
+                    top: 4%;
                     left: -6%;
-                    z-index: -1;
+                    object-fit: cover;
                 }
                 .form_block{
-                    width: 42%;
-                    height: 72%;
-                    margin-top: auto;
-                    margin-bottom: 5vh;
-                    display: flex;
-                    flex-direction: column;
-                    background-color: $Creme;
-                    border-radius: 1.5vw;
-                    border-bottom-left-radius: 10vw;
-                    padding: 1vh 2vw;
-                    position: relative;
+                    order: 2;
+                    width: 100%;
+                    height: 50vh;
+                    margin-top: 2vh;
+                    margin-bottom: 0;
+                    border-radius: 3vw;
                     h2{
                         width: 100%;
-                        height: 15%;
-                        font-family: $Main-font;
-                        font-weight: 900;
-                        font-size: 1.5vw;
-                        color: $Branco;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        height: 10%;
+                        font-size: 4.5vw;
                     }
                     form{
-                        width: 100%;
-                        height: 85%;
-                        display: flex;
-                        flex-direction: column;
-                        position: relative;
+                        height: 90%;
                         .BlockBox{
-                            width: 100%;
-                            height: 20%;
-                            position: relative;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
                             input{
-                                width: 90% !important;
-                                height: 50%;
-                                border: none;
-                                background: none;
-                                outline: none;
-                                padding: 2vh 0.5vw;
-                                font-family: $Main-font;
-                                font-weight: 800;
-                                font-size: 1vw;
-                                color: $Branco;
-                                border-bottom: 3px solid $Branco;
+                                height: 75%;
+                                font-size: 5vw;
+                                padding-left: 5vw;
+                                border-bottom: 2px solid $Branco;
                             }
                             p, span{
-                                position: absolute;
-                                left: 2vw;
-                                top: 1.75vw;
-                                font-family: $Main-font;
-                                font-weight: 700;
-                                font-size: 1vw;
-                                color: $Branco;
-                                transition: 0.5s;
-                                pointer-events: none;
-                                display: flex;
-                                flex-direction: row;
+                                left: 5vw;
+                                top: 5vw;
+                                font-size: 4vw;
                             }
-                            &:nth-child(1){
-                                span{
-                                    left: 9.3vw;
-                                    color: $Cinza;
-                                    font-weight: 900;
-                                }
-                            }
-                            &:nth-child(2){
-                                span{
-                                    left: 5vw;
-                                    color: $Cinza;
-                                    font-weight: 900;
-                                }
-                            }
+                            &:nth-child(1){ span{ left: 34vw; }}
+                            &:nth-child(2){ span{ left: 17vw; }}
                         }
-                        .BlockBox input:focus ~ p, .BlockBox input:focus ~ span{
-                            transform:translate(-0.5vw, -2.5vh);
-                            font-size: 1vw;
+                        .BlockBox input:focus ~ p, input:valid ~ p, input:focus ~ span, input:valid ~ span{
+                            transform:translate(0, -5vh);
+                            font-size: 3vw;
                         }
                         .seletor{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            position: relative;
                             #select{
-                                position: relative;
-                                width: 90% !important;
-                                height: 50%;
-                                border-bottom: 3px solid $Branco;
+                                height: 75%;
+                                border-bottom: 2px solid $Branco;
                                 #options_btn {
-                                    all: unset;
-                                    position: absolute;
-                                    inset: 0;
-                                    cursor: pointer;
-                                    z-index:5;
-                                    font-family: $Main-font;
-                                    font-weight: 800;
-                                    font-size: 1vw;
-                                    color: $Branco;
+                                    font-size: 5vw;
                                 }
                                 #select-button {
-                                    width: 100%;
-                                    height: 100%;
-                                    display: flex;
-                                    align-items: center;
-                                    position: relative;
-                                    outline: none;
                                     #selected_val{
-                                        font-family: $Main-font;
-                                        font-weight: 800;
-                                        font-size: 1vw;
-                                        color: $Branco;
-                                        width: 80%;
-                                        height: 100%;
-                                        display: flex;
-                                        align-items: center;
-                                        white-space: nowrap;                  
-                                        overflow: hidden;
-                                        text-overflow: ellipsis;
-                                        padding: 0 0.75vw;
-                                        padding-top: 0.25vh;
+                                        font-size: 5vw;
                                     }
                                     img, svg{
-                                        z-index: 99;
-                                        position: absolute;
-                                        right: 0.5vw;
-                                        width: 1.25vw;
-                                        height: 100%;
-                                        path{
-                                            fill: $Branco;
-                                        }
+                                        right: 2vw;
+                                        width: 6vw;
                                     }
                                 }
                             }
                             #options {
-                                z-index: 999;
-                                width: 90%;
-                                height: auto;
-                                max-height: 40vh;
-                                top: 6.75vh;
-                                background: $Cinzao;
-                                display: none;
-                                position: absolute;
-                                padding: 1vh 1vw;
-                                border-bottom-left-radius: 1vw;
-                                border-bottom-right-radius: 1vw;
+                                max-height: 50vh;
+                                top: 7vh;
                                 .option {
-                                    display: flex;
-                                    align-items: center;
-                                    position: relative;
-                                    width: 100%;
-                                    height: 5vh;
-                                    border-bottom: 1px solid $Cinzinha;
                                     span{
-                                        all: unset;
-                                        width: 100%;
-                                        height: 100%;
-                                        display: flex;
-                                        align-items: center;
-                                        white-space: nowrap;                  
-                                        overflow: hidden;
-                                        text-overflow: ellipsis;
-                                        padding-left: 0.75vw;
-                                        font-family: $Main-font;
-                                        font-weight: 800;
-                                        font-size: 1vw;
-                                        color: $Creme;
-                                        z-index: 5;
-                                    }
-                                    input[type="radio"]{
-                                        all: unset;
-                                        position: absolute;
-                                        inset: 0;
-                                        z-index: 10;
-                                    }
-                                    &:hover{
-                                        &::before{
-                                            content: '';
-                                            position: absolute;
-                                            inset: 0;
-                                            background: $Cinza;
-                                            opacity: 0.5;
-                                            z-index: -1;
-                                        }
-                                    }
-                                    &:last-child{
-                                        border: none;
+                                        font-size: 4.5vw;
                                     }
                                 }
                             }
-                            #options_btn:checked + #select-button svg{
-                                transform: rotate(180deg);
-                            }
-                            #select:has(#options_btn:checked) + #options {
-                                display: block;
-                            }
                         }
                         .btn{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            position: relative;
-                            height: 5vh;
-                            width: 14vw;
-                            margin-left: auto;
-                            margin-top: 3vh;
+                            margin: 3vh auto 0;
                             background-color: $Cinza;
-                            font-family: $Main-font;
-                            font-weight: 900;
-                            font-size: 1.1vw;
-                            color: $Branco;
-                            box-shadow: 0px 5px 5px $Cinzao;
-                            transition: 0.3s ease-in-out all;
-                            border-radius: 0.5vw;
-                            &:hover{
-                                transform: translateY(-5px);
-                                font-size: 1.25vw;
-                            }
+                            width: 65%;
+                            height: auto;
+                            padding: 0.25vh 0;
+                            font-size: 4.5vw;
+                            border-radius: 1.5vw;
+                            &:hover{ font-size: 4.5vw; }
                         }
                     }
                     #msg_form{
@@ -2219,105 +2064,57 @@ body {
                     }
                 }
                 h3{
-                    margin-left: auto;
-                    width: 40%;
-                    height: auto;
-                    font-family: $Main-font;
-                    font-weight: 700;
-                    font-size: 3.5vw;
-                    text-align: right;
-                    color: $Branco;
+                    order: 1;
+                    width: 100%;
+                    font-size: 7vw;
+                    text-align: center;
+                    margin-top: 5vh;
                 }
             }
-            
             #whats{
-                height: 50vh;
-                padding-bottom: 7vh;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                height: 60vh;
+                padding-bottom: 15vh;
+                
                 &::before{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: -6%;
-                    width: 111%;
-                    height: 100%;
-                    background-color: $Cinza;
-                    z-index: -1;
+                    width: 112%;
                 }
                 h2, h3{
-                    width: 100%;
-                    height: 8vh;
-                    font-family: $Main-font;
-                    font-weight: 800;
-                    font-size: 3.25vw;
-                    color: $Creme;
-                    margin-top: 6vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    font-size: 8vw;
                 }
                 h3{
-                    height: auto;
-                    font-size: 2vw;
-                    color: $Branco;
-                    font-weight: 300;
-                    padding: 1vh 0;
-                    margin-top: 1.5vh;
+                    font-size: 5.5vw;
+                    font-weight: 500;
                 }
                 .btn{
-                    margin-top: 10vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    height: 5vh;
-                    width: 17vw;
+                    margin: 8vh auto 0;
                     background-color: $Creme;
-                    font-family: $Main-font;
-                    font-weight: 900;
-                    font-size: 1.1vw;
-                    color: $Branco;
-                    box-shadow: 0px 5px 5px $Cinzao;
-                    transition: 0.3s ease-in-out all;
-                    border-radius: 0.5vw;
-                    &:hover{
-                        transform: translateY(-5px);
-                        font-size: 1.25vw;
-                    }
+                    width: 75%;
+                    height: auto;
+                    padding: 0.25vh 0;
+                    font-size: 4.5vw;
+                    border-radius: 1.5vw;
+                    &:hover{ font-size: 4.5vw; }
                 }
             }
         }
         footer{
-            bottom: 0;
-            left: 5%;
-            position: absolute;
-            width: 90%;
-            height: 7vh;
-            border-top: 5px solid $Creme;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            min-height: 7vh;
+            height: auto;
+            border-top: 3px solid $Creme;
+            flex-direction: column;
+            padding: 2vh 15vw 4vh;
             p{
                 font-family: $Main-font;
                 font-weight: 800;
-                font-size: 0.9vw;
+                font-size: 4vw;
                 color: $Branco;
+                text-align: center;
             }
             a{
-                width: 7.5vw;
-                height: 65%;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
+                width: 25vw;
+                height: auto;
+                margin-top: 1vh;
             }
         }
     }
-}
-/* Landscape */ 
-@media only screen and (min-width: 480px) and (max-width: 767px){	
 }
