@@ -4,28 +4,14 @@ document.addEventListener( 'DOMContentLoaded', function() {
     document.getElementById("data_footer").textContent = new Date().getFullYear();
 
     //galeria
-    var elms = document.getElementsByClassName( 'splide' );
-    for ( var i = 0; i < elms.length; i++ ) {
-        if(i == 1 || i == 2){
-            new Splide( elms[i], {
-                perPage: 2,
-                focus  : 0
-            }).mount();
-        }
-        else{
-            new Splide( elms[i], {
-                type   : 'loop',
-                perPage: 3,
-                focus  : 0
-            }).mount();
-        }
-    }
+    new Splide( '.splide', {
+        perPage: 2,
+        focus  : 0
+    }).mount();
 
     //relogio
     var dateString = "2026/12/15";
-    console.log(dateString);
     var deadline = new Date(dateString);
-    console.log(deadline);
 
     function updateClock(){
         var today = new Date();
@@ -70,7 +56,6 @@ window.addEventListener('scroll', function() {
 document.querySelectorAll('.links').forEach(item => { item.addEventListener('click', scrollToIdOnClick); });
 function scrollToIdOnClick(event) {
     const targetElement = document.querySelector(event.currentTarget.getAttribute('href'));
-    console.log();
     if (targetElement) {
         if(event.currentTarget.getAttribute('href') == '#condominio'){
             var targetOffset = targetElement.offsetTop;

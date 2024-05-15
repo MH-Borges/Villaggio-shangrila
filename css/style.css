@@ -291,7 +291,7 @@ body main #condominio .cond_block ul li {
   border-right: 1px solid #D9B06A;
   font-family: "Antonio", sans-serif;
   font-weight: 700;
-  font-size: 1vw;
+  font-size: 1.25vw;
   color: #4B4B4D;
   letter-spacing: 0.1vw;
 }
@@ -366,33 +366,58 @@ body main #Club h2 span {
   margin-left: 0.75vw;
   font-weight: 700;
 }
-body main #Club #bannerClub {
-  position: absolute;
-  top: 7vh;
-  left: -6%;
-  width: 111%;
-  height: 45vh;
-  z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-body main #Club .imgsBlock {
+body main #Club #Club_Carousel {
+  margin: 2vh auto;
   width: 100%;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 46vh;
+  height: 55vh;
 }
-body main #Club .imgsBlock img {
-  width: 25%;
+body main #Club #Club_Carousel .carousel-indicators {
+  height: 0.75vh;
+  align-items: center;
+  overflow: hidden;
+}
+body main #Club #Club_Carousel .carousel-indicators button {
+  background: #FFFFFF;
+  width: 2.5vw;
+  height: 0.5vh;
+  margin: 0 0.25vw;
+  border-radius: 10vw;
+}
+body main #Club #Club_Carousel .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+body main #Club #Club_Carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+body main #Club #Club_Carousel .carousel-inner .carousel-item img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+body main #Club #Club_Carousel button {
+  width: 10%;
+  height: 75%;
+  margin: auto 0;
+}
+body main #Club #Club_Carousel button .carousel-control-prev-icon, body main #Club #Club_Carousel button .carousel-control-next-icon {
+  width: 4vw;
+  height: 8vh;
+}
+body main #Club h3 {
+  width: 100%;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #4B4B4D;
+  font-size: 1.5vw;
+  margin-top: 2vh;
+}
 body main #Club p {
-  height: 23vh;
-  padding: 2vw;
+  height: auto;
+  padding: 2vh 2vw;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1vw;
@@ -443,6 +468,7 @@ body main #plantas .nav-pills {
   flex-direction: column;
   padding: 1vw;
   padding-bottom: 15vh;
+  position: relative;
 }
 body main #plantas .nav-pills a {
   all: unset;
@@ -474,6 +500,13 @@ body main #plantas .nav-pills a:hover::before {
 body main #plantas .nav-pills .active {
   background: #D9B06A;
   color: #FFFFFF;
+}
+body main #plantas .nav-pills img {
+  position: absolute;
+  width: 95%;
+  height: auto;
+  left: 0;
+  top: 25%;
 }
 body main #plantas .tab-content {
   width: 75%;
@@ -564,8 +597,8 @@ body main #plantas .tab-content .espaco_planta h4::before {
   border-bottom-right-radius: 10vw;
 }
 body main #plantas .tab-content .espaco_planta img {
-  margin: 2vh 10vw 0 auto;
-  width: 60vw;
+  margin: 4vh 5vw 0 auto;
+  width: 56vw;
   height: auto;
 }
 body main #plantas .tab-content .espaco_planta .btn {
@@ -764,60 +797,90 @@ body main #galeria .nav-pills .active {
 body main #galeria .tab-content {
   margin-top: 5vh;
   width: 80%;
-  height: 60vh;
+  height: 70vh;
   position: relative;
 }
-body main #galeria .tab-content .tab-pane {
+body main #galeria .tab-content #Entrada_fachada, body main #galeria .tab-content #Salao_festa {
   width: 100%;
   height: 100%;
 }
-body main #galeria .tab-content .tab-pane .splide {
+body main #galeria .tab-content #Entrada_fachada .imgBlock, body main #galeria .tab-content #Salao_festa .imgBlock {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
-body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow {
-  border-radius: 0;
-  width: 2vw;
-  height: 8vh;
-  background: #D9B06A;
-}
-body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow svg {
-  width: 100%;
+body main #galeria .tab-content #Entrada_fachada .imgBlock button, body main #galeria .tab-content #Salao_festa .imgBlock button {
+  width: 50%;
   height: 100%;
-  padding: 0.25vw;
-  fill: #FFFFFF;
-}
-body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--prev {
-  left: -5vw;
-  border-radius: 2vw 0.75vw 0.75vw 2vw;
-}
-body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--next {
-  right: -5vw;
-  border-radius: 0.75vw 2vw 2vw 0.75vw;
-}
-body main #galeria .tab-content .tab-pane .splide .splide__track {
-  width: 100%;
-  height: 100%;
-}
-body main #galeria .tab-content .tab-pane .splide .splide__track .splide__list .splide__slide button {
-  width: 100%;
-  height: 50%;
   border: none;
   background: none;
 }
-body main #galeria .tab-content .tab-pane .splide .splide__track .splide__list .splide__slide button img {
+body main #galeria .tab-content #Entrada_fachada .imgBlock button img, body main #galeria .tab-content #Salao_festa .imgBlock button img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main #galeria .tab-content .tab-pane .splide .splide__pagination {
+body main #galeria .tab-content #Salao_festa .imgBlock button {
+  width: 50%;
+  height: 30%;
+}
+body main #galeria .tab-content #Salao_festa .imgBlock button:first-child {
+  width: 100%;
+  height: 70%;
+}
+body main #galeria .tab-content #Area_comum {
+  width: 100%;
+  height: 100%;
+}
+body main #galeria .tab-content #Area_comum .splide {
+  width: 100%;
+  height: 100%;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow {
+  border-radius: 0;
+  width: 2vw;
+  height: 8vh;
+  background: #D9B06A;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow svg {
+  width: 100%;
+  height: 100%;
+  padding: 0.25vw;
+  fill: #FFFFFF;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow--prev {
+  left: -5vw;
+  border-radius: 2vw 0.75vw 0.75vw 2vw;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow--next {
+  right: -5vw;
+  border-radius: 0.75vw 2vw 2vw 0.75vw;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__track {
+  width: 100%;
+  height: 100%;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__track .splide__list .splide__slide button {
+  width: 100%;
+  height: 50%;
+  border: none;
+  background: none;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__track .splide__list .splide__slide button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #galeria .tab-content #Area_comum .splide .splide__pagination {
   display: none;
 }
 body main #galeria .tab-content::before, body main #galeria .tab-content::after {
   content: "";
   position: absolute;
-  width: 10%;
+  width: 8%;
   height: 105%;
   left: -1%;
   top: -2%;
@@ -955,7 +1018,7 @@ body main #localizacao .map::before {
 body main #localizacao .locais_block {
   width: 45vw;
   height: 70vh;
-  padding: 7.5vh 0 7.5vh 2.5vw;
+  padding: 7.5vh 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -968,7 +1031,7 @@ body main #localizacao .locais_block .local {
 }
 body main #localizacao .locais_block .local img {
   border: 5px solid #D9B06A;
-  height: 50%;
+  height: 56%;
 }
 body main #localizacao .locais_block .local h4 {
   width: 100%;
@@ -994,6 +1057,9 @@ body main #localizacao .locais_block .local p {
 }
 body main #localizacao .locais_block .local:nth-child(5) img, body main #localizacao .locais_block .local:nth-child(6) img, body main #localizacao .locais_block .local:nth-child(7) img, body main #localizacao .locais_block .local:nth-child(8) img {
   margin-top: auto;
+}
+body main #localizacao .locais_block .local:nth-child(5) h4, body main #localizacao .locais_block .local:nth-child(6) h4, body main #localizacao .locais_block .local:nth-child(7) h4, body main #localizacao .locais_block .local:nth-child(8) h4 {
+  margin-top: 2.5vh;
 }
 body main #localizacao .locais_block .local:nth-child(5) p, body main #localizacao .locais_block .local:nth-child(6) p, body main #localizacao .locais_block .local:nth-child(7) p, body main #localizacao .locais_block .local:nth-child(8) p {
   margin-top: 1.5vh;
@@ -1351,11 +1417,11 @@ body main #contato .form_block #msg_form {
 }
 body main #contato h3 {
   margin-left: auto;
-  width: 40%;
+  width: 45%;
   height: auto;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   text-align: right;
   color: #FFFFFF;
 }
@@ -1554,10 +1620,10 @@ body footer a img {
   }
   body main #condominio .cond_block h5 {
     margin-top: 3vh;
-    padding: 0 2vw;
+    padding: 0 3vw;
     font-size: 3vw;
     color: #FFFFFF;
-    line-height: 2.5vh;
+    line-height: 2vh;
     text-align: center;
   }
   body main #condominio .cond_block .btn {
@@ -1590,37 +1656,33 @@ body footer a img {
   body main #Club h2 span {
     margin-left: 1.5vw;
   }
-  body main #Club #bannerClub {
-    position: absolute;
-    top: 10vh;
-    left: -6%;
-    width: 112%;
-    height: 30vh;
-    z-index: -1;
-    -o-object-fit: cover;
-       object-fit: cover;
+  body main #Club #Club_Carousel {
+    height: 48vh;
   }
-  body main #Club .imgsBlock {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 32vh;
+  body main #Club #Club_Carousel button {
+    width: 15%;
   }
-  body main #Club .imgsBlock img {
-    padding: 0.5vw;
-    width: 50%;
-    height: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  body main #Club #Club_Carousel button .carousel-control-prev-icon, body main #Club #Club_Carousel button .carousel-control-next-icon {
+    width: 80%;
+    height: 10vh;
+  }
+  body main #Club #Club_Carousel .carousel-control-prev {
+    left: -1vw;
+  }
+  body main #Club #Club_Carousel .carousel-control-next {
+    right: -1vw;
+  }
+  body main #Club h3 {
+    text-align: center;
+    font-size: 4.5vw;
   }
   body main #Club p {
     width: 100%;
     height: auto;
     color: #4B4B4D;
-    padding: 2vh 2vw;
-    font-size: 2.75vw;
-    line-height: 3vh;
+    padding: 2vh 4vw;
+    font-size: 3vw;
+    line-height: 2.5vh;
     text-align: center;
   }
   body main #Club .btn {
@@ -1669,6 +1731,9 @@ body footer a img {
     width: 47%;
     height: 100%;
     border: 1px solid;
+  }
+  body main #plantas .nav-pills img {
+    display: none;
   }
   body main #plantas .tab-content {
     width: 100%;
@@ -1830,22 +1895,32 @@ body footer a img {
   }
   body main #galeria .tab-content {
     margin-top: 4vh;
-    width: 80%;
+    width: 100%;
     height: 30vh;
   }
-  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow {
+  body main #galeria .tab-content #Salao_festa .imgBlock button {
+    width: 50%;
+    height: 40%;
+  }
+  body main #galeria .tab-content #Salao_festa .imgBlock button:first-child {
+    width: 100%;
+    height: 60%;
+  }
+  body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow {
     width: 7vw;
     height: 8vh;
   }
-  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow svg {
+  body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow svg {
     padding: 0;
   }
-  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--prev {
-    left: -8vw;
+  body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow--prev {
+    z-index: 999;
+    left: 4vw;
     border-radius: 5vw 2vw 2vw 5vw;
   }
-  body main #galeria .tab-content .tab-pane .splide .splide__arrows .splide__arrow--next {
-    right: -8vw;
+  body main #galeria .tab-content #Area_comum .splide .splide__arrows .splide__arrow--next {
+    z-index: 999;
+    right: 4vw;
     border-radius: 2vw 5vw 5vw 2vw;
   }
   body main #galeria #Img_adapt_Modal .modal-dialog {
@@ -2103,9 +2178,9 @@ body footer a img {
   body main #contato h3 {
     order: 1;
     width: 100%;
-    font-size: 7vw;
+    font-size: 6vw;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 4vh;
   }
   body main #whats {
     height: 60vh;
