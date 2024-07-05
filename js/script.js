@@ -10,7 +10,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     }).mount();
 
     //relogio
-    var dateString = "2026/12/15";
+    var dateString = "2026/12/30";
     var deadline = new Date(dateString);
 
     function updateClock(){
@@ -48,7 +48,7 @@ window.addEventListener('scroll', function() {
     else{ document.querySelector(".whats_link").classList.add('hide'); }
 
     //menu fixo
-    if(window.pageYOffset > 950){ document.querySelector(".menu").classList.add('fixed'); }
+    if(window.pageYOffset > 1150){ document.querySelector(".menu").classList.add('fixed'); }
     else{ document.querySelector(".menu").classList.remove('fixed'); }
 });
 
@@ -65,7 +65,7 @@ function scrollToIdOnClick(event) {
         smoothScrollTo(0, targetOffset);
     }
 }
-function smoothScrollTo(endX, endY, duration = 600) {
+function smoothScrollTo(endX, endY, duration = 200) {
     const startX = window.scrollX || window.pageXOffset;
     const startY = window.scrollY || window.pageYOffset;
     const distanceX = endX - startX;

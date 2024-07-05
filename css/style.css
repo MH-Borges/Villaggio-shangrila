@@ -259,6 +259,9 @@ body main #condominio .cond_block h3 {
   color: #FFFFFF;
   margin-top: 4.5vh;
 }
+body main #condominio .cond_block h3 span {
+  margin-left: 7vw;
+}
 body main #condominio .cond_block h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -303,12 +306,12 @@ body main #condominio .cond_block ul li:last-child {
 }
 body main #condominio .cond_block h5 {
   margin-top: 4vh;
-  padding-right: 10vw;
+  padding-right: 5vw;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1vw;
   color: #4B4B4D;
-  line-height: 2.5vh;
+  line-height: 3vh;
 }
 body main #condominio .cond_block .btn {
   margin-top: 5vh;
@@ -346,6 +349,7 @@ body main #condominio .block_imgCond img {
   border-radius: 0.5vw;
 }
 body main #Club {
+  margin-top: 8vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -419,7 +423,7 @@ body main #Club p {
   height: auto;
   padding: 3vh 3vw;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1vw;
   color: #4B4B4D;
   line-height: 3vh;
@@ -547,10 +551,11 @@ body main #plantas .tab-content .infos_plantas ul li {
   padding-left: 1vw;
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.9vw;
   color: #4B4B4D;
   letter-spacing: 0.1vw;
+  margin-left: 1vw;
 }
 body main #plantas .tab-content .infos_plantas ul li::before {
   content: "";
