@@ -22,8 +22,8 @@
 
     $mensagem = 'Tenho interesse na '.$planta;  
 
-    $to = "universofarol@outlook.com";
-    $subject = "Contato cliente ($nome) - Formulario Landing Page";
+    $to = "atendimento@vl7.com.br";
+    $subject = "Contato cliente ($nome) - Formulario Landing Page Villaggio Shangrila";
     $body = utf8_decode(
         'Nome: ' .$nome. "\r\n"."\r\n".
         'Email: ' .$email. "\r\n"."\r\n".
@@ -31,7 +31,7 @@
         'Mensagem:'. "\r\n"."\r\n". $mensagem
     );
 
-    $header = 'From:contato@universofarol.com.br'."\r\n"."Reply-To:".$email;
+    $header = 'From:atendimento@vl7.com.br'."\r\n"."Reply-To:".$email;
 
     if(mail($to,$subject,$body,$header)){
         echo ("Formulario enviado com sucesso! Entraremos em contato em breve, obrigado por nos escolher!");
